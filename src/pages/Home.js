@@ -1,11 +1,11 @@
 import React from "react";
 
-function Home() {
+const Home = () => {
     return (
-        <div className="Home">
-            <p>hello world</p>
-        </div>
-    )
-}
-
-export default Home;
+      <div>
+        <p>home</p>
+      </div>
+    );
+  };
+  
+  export default Home;
