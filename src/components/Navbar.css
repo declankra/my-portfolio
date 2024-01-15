@@ -1,10 +1,11 @@
-nav a {
+
+.navbar a {
     margin-right: 10px;
     text-decoration: none;
     color: black;
   }
   
-  nav a.active {
+  .navbar a.active {
     color: blue;
     font-weight: bold;
   }
