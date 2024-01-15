@@ -1,0 +1,75 @@
+.navbar {
+    background-color: #d2d4d456;
+    padding: 10px 10px;
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 25px;
+    display: inline-block; /* To align the navbar items horizontally */
+    width: 100%; /* Take the full width */
+}
+
+.navbar li { 
+    display: inline-block; /* To align the navbar items horizontally */
+    margin: 0px 15px; /* Add some space between each item */
+}
+
+.navbar a {
+    color: rgb(140, 236, 249);
+    padding: 5px 5px;
+    text-decoration:none;
+    transition: background-color 0.3s;
+    margin: 10px;
+    font-size: 1.1rem; /* Increase the font size if needed */
+}
+
+.navbar .active
+{
+    color: red;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #aeaeae;
+}
+
+.navbar a:active {
+    color: rgb(173, 249, 140);
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+    .navbar {
+        margin: auto;
+        margin-bottom: 25px;
+    }
+}
+
+/* Mobile styles */
+.navbar-checkbox {
+    display: none;
+}
+
+.navbar-label {
+    display: none;
+}
+
+.navbar-nav {
+    display: none;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 767px) {
+
+    .navbar li {
+        margin: auto;
+        display: inline-block; /* To align the navbar items horizontally */
+
+    }
+
+    .navbar a{
+        margin: auto;
+        font-size: .85rem; /* Increase the font size if needed */
+        padding: 5px 10px;
+
+    }
+}
