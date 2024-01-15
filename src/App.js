@@ -17,16 +17,19 @@ TagManager.initialize(tagManagerArgs)
 
 function App() {
   return (
+    <BrowserRouter>
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home/>} exact />
-          <Route path="/projects" element={<Projects/>} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/" element={<Home />} exact />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
+    </BrowserRouter>
+
   );
 }
 
