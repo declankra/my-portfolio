@@ -1,10 +1,11 @@
 import React from 'react';
+import './Footer.css';
 
-const Footer = () => {
+function Footer() {
   return (
-    <div>
-      <p>Website was last updated: 1/17/24</p>
-      <p>see github repo for online portfolio updates: </p> <a href="https://github.com/declankra/my-portfolio">declankra/my-portfolio</a>
+    <div className="Footer">
+      <p>website was last updated: 1/17/24</p>
+      <p>see github repo for online portfolio updates: <a href="https://github.com/declankra/my-portfolio">declankra/my-portfolio</a> </p> 
     </div>
   );
 };
