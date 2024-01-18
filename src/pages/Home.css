@@ -1,0 +1,6 @@
+.header {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    background: #fff; /* Assuming a white background */
+  }
