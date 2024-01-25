@@ -1,24 +1,50 @@
+main {
+  height: 100vh;   /* This will take up the full viewport height */
+}
+
 .profile-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background: #fff; /* Assuming a white background */
+  padding: 15px;
+  background: #fff;  /* Assuming a white background */
+  text-align: center;
 }
 
 .profile-text h1 {
-  font-size: 2.5rem; /* Large, bold font for the name */
-  color: #000; /* Black color for the text */
+  font-size: 2.5rem;   /* Large, bold font for the name */
+  color: #000;   /* Black color for the text */
   margin: 0;
 }
 
 .profile-text p {
-  font-size: 1rem; /* Smaller font size for the subtitle */
-  color: #666; /* Dark grey color for the subtitle */
+  font-size: 1rem;   /* Smaller font size for the subtitle */
+  color: #666;   /* Dark grey color for the subtitle */
 }
 
 .profile-avatar img {
-  width: 150px; /* Adjust the size as needed */
+  width: 150px;   /* Adjust the size as needed */
   height: 150px;
-  object-fit: cover; /* Ensures the image covers the area without stretching */
+  object-fit: cover;   /* Ensures the image covers the area without stretching */
+}
+
+/* Desktop styles */
+@media screen and (min-width: 768px) {
+  .profile-avatar img {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile-text h1 {
+    font-size: 1.5rem;     /* Large, bold font for the name */
+    color: #000;     /* Black color for the text */
+    margin: 0;
+  }
+  .profile-text p {
+    font-size: .8rem;
+  }
+  .profile-avatar img {
+    margin-left: 5px;
+  }
 }

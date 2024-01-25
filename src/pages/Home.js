@@ -5,7 +5,7 @@ import './Home.css'
 const Avatar = () => {
   const avatarPath = process.env.PUBLIC_URL + 'Avatar_Me_PS.png'
   return(
-    <img classNAme="avatar"
+    <img className="avatar"
       src={avatarPath}
       alt={'Declan Kramper Profile'}
       style = {{
@@ -26,7 +26,7 @@ const Profile = () => {
     <div className="profile-container">
       <div className="profile-text">
         <h1 style={nameStyle}>Declan Kramper</h1>
-        <p>Built a website to showcase my work</p>
+        <p>Building a website to showcase my work</p>
       </div>
       <div className="profile-avatar">
         <Avatar />
