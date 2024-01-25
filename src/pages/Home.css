@@ -31,7 +31,7 @@ main {
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .profile-avatar img {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 
@@ -39,7 +39,6 @@ main {
   .profile-text h1 {
     font-size: 1.5rem;     /* Large, bold font for the name */
     color: #000;     /* Black color for the text */
-    margin: 0;
   }
   .profile-text p {
     font-size: .8rem;
