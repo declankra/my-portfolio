@@ -9,9 +9,9 @@
 
 .pdf-container {
     margin-top: 30px;
-    width: 70%;
     overflow: auto; /* Adds scrollbars if the PDF is longer than the container */
     height: 500px;
+    width: 60%;
   }
   
 .resume-header {
@@ -26,3 +26,11 @@
     color: #666; /* Dark grey color for the subtitle */
     margin: 0;
   }
+
+  @media screen and (max-width: 767px) {
+    .pdf-container {
+        height: 450px;
+
+    }
+    
+}
