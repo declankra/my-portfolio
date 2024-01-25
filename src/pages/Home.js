@@ -6,7 +6,7 @@ const Avatar = () => {
   return(
     <img classNAme="avatar"
       src={avatarPath}
-      alt={'Declan Kramper Profile Picture'}
+      alt={'Declan Kramper Profile'}
       style = {{
         resizeMode: 'center',
         width: 125,
