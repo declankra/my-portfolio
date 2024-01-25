@@ -1,6 +1,24 @@
-.header {
-    display: flex;
-    text-align: center;
-    padding: 20px;
-    background: #fff; /* Assuming a white background */
-  }
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff; /* Assuming a white background */
+}
+
+.profile-text h1 {
+  font-size: 2.5rem; /* Large, bold font for the name */
+  color: #000; /* Black color for the text */
+  margin: 0;
+}
+
+.profile-text p {
+  font-size: 1rem; /* Smaller font size for the subtitle */
+  color: #666; /* Dark grey color for the subtitle */
+}
+
+.profile-avatar img {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}

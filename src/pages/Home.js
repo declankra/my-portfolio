@@ -1,8 +1,9 @@
 import React from "react";
+import './Home.css'
 
 
 const Avatar = () => {
-  const avatarPath = process.env.PUBLIC_URL + 'Avatar_Me_PS_Blue.png'
+  const avatarPath = process.env.PUBLIC_URL + 'Avatar_Me_PS.png'
   return(
     <img classNAme="avatar"
       src={avatarPath}
@@ -20,14 +21,25 @@ const nameStyle = {
   fontWeight: "bold",
 }
 
+const Profile = () => {
+  return (
+    <div className="profile-container">
+      <div className="profile-text">
+        <h1 style={nameStyle}>Declan Kramper</h1>
+        <p>Built a website to showcase my work</p>
+      </div>
+      <div className="profile-avatar">
+        <Avatar />
+      </div>
+    </div>
+  );
+};
+
 function Home() {
     return (
-      <div className="Home">
-          <div className="header">
-            <h1 style={nameStyle}>Declan Kramper</h1>
-            <Avatar />
-          </div>
-      </div>
+      <main>
+          <Profile/>
+      </main>
     );
   };
   
