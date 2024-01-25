@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <div className="Footer">
-      <p>website was last updated: 1/17/24</p>
+      <p>website was last updated: 1/25/24</p>
       <p>see github repo for online portfolio updates: <a href="https://github.com/declankra/my-portfolio">declankra/my-portfolio</a> </p> 
     </div>
   );
