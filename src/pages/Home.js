@@ -3,13 +3,12 @@ import './Home.css'
 
 
 const Avatar = () => {
-  const avatarPath = process.env.PUBLIC_URL + 'Avatar_Me_PS.png'
+  const avatarPath = process.env.PUBLIC_URL + 'Avatar_ME_PS.png'
   return(
     <img className="avatar"
       src={avatarPath}
       alt={'Declan Kramper Profile'}
       style = {{
-        resizeMode: 'center',
         width: 125,
         height: 125
       }}
