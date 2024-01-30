@@ -12,7 +12,7 @@ const ProjectCard = ({ imageUrl, title, what, how, why, url }) => {
             image={imageUrl}
             alt={title}
           />
-          <CardContent>
+          <CardContent sx={{ cursor: 'pointer' }}>
             <Typography gutterBottom variant="h5" component="div">
               {title}
             </Typography>
