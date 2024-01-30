@@ -3,10 +3,10 @@ import ProjectsGrid from "../components/ProjectsGrid";
 
 function Projects() {
     return (
-        <div className="Projects">
+        <main>
             <h1>Projects</h1>
             <ProjectsGrid/>
-        </div>
+        </main>
     )
 }
 
