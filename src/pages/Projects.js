@@ -1,9 +1,11 @@
 import React from "react";
+import ProjectsGrid from "../components/ProjectsGrid";
 
 function Projects() {
     return (
         <div className="Projects">
-            <p>projects</p>
+            <h1>Projects</h1>
+            <ProjectsGrid/>
         </div>
     )
 }

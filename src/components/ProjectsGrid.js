@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid } from '@mui/material';
-import Project from './Project';
+import ProjectCard from './ProjectCard';
 
 const ProjectsGrid = () => {
   // Example data - this could come from a database or API in a real-world scenario
@@ -19,7 +19,7 @@ const ProjectsGrid = () => {
   return (
     <Grid container spacing={2}>
       {projects.map((project, index) => (
-        <Project key={index} {...project} />
+        <ProjectCard key={index} {...project} />
       ))}
     </Grid>
   );

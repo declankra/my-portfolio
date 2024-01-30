@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardActionArea, CardMedia, CardContent, Typography, Grid } from '@mui/material';
 
-const Project = ({ imageUrl, title, what, how, why, url }) => {
+const ProjectCard = ({ imageUrl, title, what, how, why, url }) => {
   return (
     <Grid item xs={12} sm={6}>
       <Card>
@@ -32,4 +32,4 @@ const Project = ({ imageUrl, title, what, how, why, url }) => {
   );
 };
 
-export default Project;
+export default ProjectCard;
