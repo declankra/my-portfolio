@@ -11,7 +11,7 @@ const ProjectCard = ({ imageUrl, title, what, how, why, url }) => {
             height="180"
             image={imageUrl}
             alt={title}
-            style={{ objectFit: 'fill', objectPosition: 'center' }}
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
           />
           <CardContent sx={{ cursor: 'pointer' }}>
             <Typography gutterBottom variant="h5" component="div">
