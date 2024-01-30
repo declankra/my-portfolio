@@ -8,7 +8,7 @@ const ProjectCard = ({ imageUrl, title, what, how, why, url }) => {
         <CardActionArea href={url} target="_blank">
           <CardMedia
             component="img"
-            height="140"
+            height="180"
             image={imageUrl}
             alt={title}
           />

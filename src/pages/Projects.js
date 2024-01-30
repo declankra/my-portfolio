@@ -1,4 +1,5 @@
 import React from "react";
+import './Projects.css'
 import ProjectsGrid from "../components/ProjectsGrid";
 
 function Projects() {
