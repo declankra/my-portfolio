@@ -8,7 +8,7 @@ const ProjectsGrid = () => {
     // Example data - this could come from a database or API in a real-world scenario
     const projects = [
         {
-            imageUrl: require(`../images/declanKramperCropped.png`),
+            imageUrl: require(`../images/declanKramperCropped.jpeg`),
             title: 'Personal Portfolio',
             what: 'personal website to showcases my personal projects, declankramper.me',
             how: 'web dev tools and figuring it out',
