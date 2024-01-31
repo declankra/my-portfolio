@@ -3,7 +3,7 @@ import './Home.css'
 
 
 const Avatar = () => {
-  const avatarPath = process.env.PUBLIC_URL + 'Avatar_ME_PS.png'
+  const avatarPath = process.env.PUBLIC_URL + 'Avatar_ME_PS.jpeg'
   return(
     <img className="avatar"
       src={avatarPath}
