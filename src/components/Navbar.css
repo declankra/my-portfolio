@@ -22,11 +22,13 @@
     transition: color 0.3s ease;
   }
 
-  .navbar li a:hover{
-    color: #67dfec;
+  .nav-link:hover {
+    color: #67dfec; /* Hover color */
   }
-  .navbar li .active {
-    color: #0d3dce;
+  
+  .nav-link.active {
+    color: #0d3dce; /* Active color */
+    font-weight: bold; /* Makes active link bold */
   }
 
   /* Desktop styles */
