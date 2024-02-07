@@ -23,6 +23,14 @@ const ProjectsGrid = () => {
             why: 'create a special gift for the special people in my life while learning how to build an idea inspired by Harry Potter',
             url: 'https://declankramper.notion.site/NFC-Record-Player-Build-bf95a606cc474c11a626b50821fb12d4?pvs=4'
         },
+        {
+            imageUrl: require(`../images/healthVizSc.jpeg`),
+            title: 'Health Dashboard | "Whoop app" for Apple Watch',
+            what: 'a live dashboard of my health goals',
+            how: 'google cloud functions and APIs send data to google sheets that is sourced in looker studio report',
+            why: 'visually track progress towards my health goals',
+            url: 'https://lookerstudio.google.com/s/jhZmM2aXrkw'
+        },
        
         // ... more projects
     ];
