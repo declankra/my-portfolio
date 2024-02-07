@@ -10,3 +10,6 @@
 
 #cv folder
 /cv
+
+#file for googleCloud key json file that prob isn't even needed
+/googleCloud
