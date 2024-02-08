@@ -29,7 +29,7 @@ const ProjectsGrid = () => {
             what: 'a live dashboard of my health goals',
             how: 'google cloud functions and APIs send data to google sheets that is sourced in looker studio report',
             why: 'visually track progress towards my health goals',
-            url: 'https://lookerstudio.google.com/s/jhZmM2aXrkw'
+            url: 'https://www.declankramper.me/health'
         },
        
         // ... more projects
