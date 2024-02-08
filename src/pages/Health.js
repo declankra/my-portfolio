@@ -9,9 +9,8 @@ import './Health.css'
 function Health() {
     return (
         <main>
-            <h1>Contact</h1>
+            <h1>Health</h1>
             <p>hello world</p>
-            <Resume />
         </main>
     )
 }
