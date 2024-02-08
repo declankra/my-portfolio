@@ -10,8 +10,8 @@ function Health() {
         <main>
             <h1>Health</h1>
             <div className="container">
-            <h2>Health Dashboard Project</h2>
-            <div dangerouslySetInnerHTML={iframeHtml} />
+                <h2>Health Dashboard Project</h2>
+                <div dangerouslySetInnerHTML={iframeHtml} />
             </div>
         </main>
     )
