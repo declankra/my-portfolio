@@ -1,27 +1,55 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
+// Define the URL of your Google Cloud Function
+const cloudFunctionUrl = "YOUR_CLOUD_FUNCTION_URL";
 
-
-const getGoalMetrics = () => {
-    return (
-      
-    );
-  };
+const getGoalMetrics = async () => {
+    try {
+        const response = await fetch(cloudFunctionUrl);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error fetching goal metrics:", error);
+        return [];
+    }
+};
 
 const GoalsComponent = () => {
+    const [goalMetrics, setGoalMetrics] = useState([]);
+
+    useEffect(() => {
+        getGoalMetrics().then(data => {
+            setGoalMetrics(data);
+        });
+    }, []);
+
     return (
-      
+        <div>
+            <h2>Goal Metrics</h2>
+            {goalMetrics.length > 0 ? (
+                goalMetrics.map((metric, index) => (
+                    <div key={index}>
+                        <h3>{metric.sheetName}</h3>
+                        <pre>{JSON.stringify(metric.data, null, 2)}</pre>
+                    </div>
+                ))
+            ) : (
+                <p>No data found</p>
+            )}
+        </div>
     );
-  };
+};
 
-
-function Contact() {
+function Goals() {
     return (
         <main>
             <h1>Goals 2024</h1>
             <GoalsComponent />
         </main>
-    )
+    );
 }
 
-export default Contact;
+export default Goals;
