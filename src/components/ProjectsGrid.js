@@ -8,14 +8,6 @@ const ProjectsGrid = () => {
     // Example data - this could come from a database or API in a real-world scenario
     const projects = [
         {
-            imageUrl: require(`../images/declanKramperCropped.jpeg`),
-            title: 'Personal Portfolio',
-            what: 'personal website to showcases my personal projects, declankramper.me',
-            how: 'web dev tools and figuring it out',
-            why: "it’s creative, visible, and a challenge",
-            url: 'https://declankramper.notion.site/My-Online-Portfolio-23b32f724d974f9c905ea25c86e580a9?pvs=4'
-        },
-        {
             imageUrl: require(`../images/recordPlayer.jpeg`),
             title: 'Magic Record Player',
             what: 'magically play the soundtrack of your memories.',
@@ -30,6 +22,22 @@ const ProjectsGrid = () => {
             how: 'google cloud functions and APIs send data to google sheets that is sourced in looker studio report',
             why: 'visually track progress towards my health goals',
             url: 'https://www.declankramper.me/health'
+        },
+        {
+            imageUrl: require(`../images/goalsComponentSketch.jpeg`),
+            title: 'Visual Goal Tracker',
+            what: 'visual progress towards my 2024 goals',
+            how: 'FE React fetch API gets data from a google sheet (db) which is populated by external APIs',
+            why: '“seeing” progress gives focus, clarity, and accountability in achieving goals',
+            url: 'https://www.declankramper.me/goals'
+        },
+        {
+            imageUrl: require(`../images/declanKramperCropped.jpeg`),
+            title: 'Personal Portfolio',
+            what: 'personal website to showcases my personal projects, declankramper.me',
+            how: 'web dev tools and figuring it out',
+            why: "it’s creative, visible, and a challenge",
+            url: 'https://declankramper.notion.site/My-Online-Portfolio-23b32f724d974f9c905ea25c86e580a9?pvs=4'
         },
        
         // ... more projects
