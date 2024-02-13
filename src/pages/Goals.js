@@ -69,7 +69,7 @@ function Goals() {
         <main>
             <h1>Goals</h1>
             <GoalsComponent />
-            <p style={{ marginTop: '20px' }}>
+            <p style={{ marginTop: '20px', fontStyle: 'italic' }}>
                 To see how this table works, go to the <a href="https://declankramper.notion.site/Visual-Goal-Tracker-e93fdab0cad1446f896983068aa90a4f?pvs=4" target="_blank" rel="noopener noreferrer">Notion build page</a>.
             </p>
         </main>
