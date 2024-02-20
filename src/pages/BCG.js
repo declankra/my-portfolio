@@ -2,7 +2,7 @@ import React from "react";
 import './BCG.css'
 
 
-const BCGResumePath = process.env.PUBLIC_URL + '/DeclanKramper_ResumeBCG.pdf';
+const BCGResumePath = process.env.PUBLIC_URL + '/DeclanKramper_Resume_DeliveryAnalyst.pdf';
 
 function BCG() {
     return (

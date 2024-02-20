@@ -2,12 +2,12 @@ import React from "react";
 import './Contact.css'
 
 const Resume = () => {
-    const ResumePath = process.env.PUBLIC_URL + 'DeclanKramper_Resume_05082023.pdf'
+    const ResumePath = process.env.PUBLIC_URL + 'DeclanKramper_Resume_PM.pdf' // PM resume
     return (
         <div className="resume-container">
             <div className="resume-header">
                 <h2 className="resume-title">Product Development Resume</h2>
-                <p className="resume-subtitle">last updated: May 05 2023</p>
+                <p className="resume-subtitle">last updated: June 2023</p>
             </div>
             <div className="pdf-container">
                 <object
