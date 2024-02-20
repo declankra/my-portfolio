@@ -28,6 +28,34 @@ main {
   object-fit: cover;   /* Ensures the image covers the area without stretching */
 }
 
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.welcome-message {
+  max-width: 45%;
+  margin-right: 30%; /* This will push the container to the right */
+  text-align: left;
+  background-color: #F0F0F0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.body a {
+  color: #0077cc; /* Example link color */
+  text-decoration: none; /* Removes underline */
+}
+.body a:hover {
+  text-decoration: underline; /* Adds underline on hover for visual feedback */
+}
+
+.body h2 {
+  margin: 0;
+}
+
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .profile-avatar img {
@@ -35,15 +63,20 @@ main {
   }
 }
 
+/* Mobile styles */
 @media screen and (max-width: 767px) {
-  .profile-text h1 {
-    font-size: 1.5rem;     /* Large, bold font for the name */
+  h1 {
+    font-size: 1.1rem;     /* Large, bold font for the name */
     color: #000;     /* Black color for the text */
   }
-  .profile-text p {
+  p {
     font-size: .8rem;
   }
   .profile-avatar img {
     margin-left: 5px;
+  }
+  h2 {
+    font-size: 1.0rem;     
+
   }
 }
