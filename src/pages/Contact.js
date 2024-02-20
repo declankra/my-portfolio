@@ -41,18 +41,24 @@ function Contact() {
         color: 'blue',
         border: 'none',
         cursor: 'pointer',
-        padding: '5',
+        padding: '5px',
     };
 
     return (
         <main>
-            <h1>Contact</h1>
-            <p>hello world</p>
-            <div className="resume-switch" style={{ textAlign: 'center'}}>
-                <button style={buttonStyle} onClick={() => setSelectedResume('PM')}>Product Development Resume</button>
-                <button style={buttonStyle} onClick={() => setSelectedResume('TD')}>Delivery Analyst Resume</button>
-            </div>
-            <Resume {...resumes[selectedResume]} />
+            <section className='hero'>
+                <h1>Contact</h1>
+                <p>hello world</p>
+            </section>
+            <section className='body'>
+                <div classname='resume-section'>
+                <div className="resume-switch" style={{ textAlign: 'center' }}>
+                    <button style={buttonStyle} onClick={() => setSelectedResume('PM')}>Product Development Resume</button>
+                    <button style={buttonStyle} onClick={() => setSelectedResume('TD')}>Delivery Analyst Resume</button>
+                </div>
+                <Resume {...resumes[selectedResume]} />
+                </div>
+            </section>
         </main>
     );
 }

@@ -1,6 +1,6 @@
 .resume-container {
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center; /* This will center the child elements horizontally */
@@ -12,7 +12,7 @@
     margin-top: 15px;
     overflow: auto; /* Adds scrollbars if the PDF is longer than the container */
     height: 500px;
-    width: 60%;
+    width: 100%;
   }
   
 .resume-header {
@@ -28,6 +28,10 @@
     margin: 0;
   }
 
+.resume-switch {
+    align-items: center;
+  }
+
   @media screen and (max-width: 767px) {
     .pdf-container {
         height: 450px;
@@ -35,6 +39,3 @@
     }
 }
 
-.resume-switch {
-  align-items: center;
-}
