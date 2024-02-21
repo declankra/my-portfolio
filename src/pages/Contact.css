@@ -1,41 +1,58 @@
+.body {
+  width: 100%;
+}
+
+.resume-section {
+  width: 100%;
+}
+
 .resume-container {
-    text-align: center;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* This will center the child elements horizontally */
-    justify-content: center; /* This will center the child elements vertically if there's space */
-    padding-top: 8px;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center the child elements horizontally */
+  justify-content: center; /* This will center the child elements vertically if there's space */
+  padding-top: 8px;
+  width: 100%;
 }
 
 .pdf-container {
-    margin-top: 15px;
-    overflow: auto; /* Adds scrollbars if the PDF is longer than the container */
-    height: 500px;
-    width: 100%;
-  }
-  
-.resume-header {
-    margin-bottom: 20px; /* Adjust as needed for spacing */
-  }
-
-.resume-title {
-    margin: 0;
-  }
-
-.resume-subtitle {
-    color: #666; /* Dark grey color for the subtitle */
-    margin: 0;
-  }
-
-.resume-switch {
-    align-items: center;
-  }
-
-  @media screen and (max-width: 767px) {
-    .pdf-container {
-        height: 450px;
-
-    }
+  margin-top: 15px;
+  overflow: auto; /* Adds scrollbars if the PDF is longer than the container */
+  height: 500px;
+  width: 65%;
 }
 
+
+.resume-header {
+  margin-bottom: 20px;
+}
+
+.resume-title, .resume-subtitle {
+  margin: 0;
+}
+
+.resume-subtitle {
+  color: #666; /* Dark grey color for the subtitle */
+}
+
+.resume-switch {
+  text-align: center;
+  margin-bottom: 20px; /* Added for spacing */
+}
+
+.resume-button {
+  background: white;
+  color: blue;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0 5px; /* Added for spacing between buttons */
+}
+
+@media screen and (max-width: 767px) {
+  .pdf-container {
+      height: 450px;
+  }
+}
