@@ -1,0 +1,27 @@
+/* Apply globally in your main CSS file */
+body {
+    font-family: 'Titillium Web', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Use the semi-bold weight for Poppins */
+  }
+  
+  h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+
+  p, li, a {
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  code, pre {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 200; /* Use the light weight for a more refined look */
+  }
+  
+
+  
+ 
