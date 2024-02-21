@@ -15,7 +15,8 @@
     "react-gtm-module": "^2.0.11",
     "react-router-dom": "^6.21.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "start": "export BROWSER='Arc' && export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
