@@ -51,7 +51,7 @@ function Contact() {
                 <p>hello world</p>
             </section>
             <section className='body'>
-                <div classname='resume-section'>
+                <div className='resume-section'>
                 <div className="resume-switch" style={{ textAlign: 'center' }}>
                     <button style={buttonStyle} onClick={() => setSelectedResume('PM')}>Product Development Resume</button>
                     <button style={buttonStyle} onClick={() => setSelectedResume('TD')}>Delivery Analyst Resume</button>

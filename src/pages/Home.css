@@ -6,7 +6,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   background: #fff;  /* Assuming a white background */
   text-align: center;
 }
@@ -14,7 +14,7 @@ main {
 .profile-text h1 {
   font-size: 2.5rem;   /* Large, bold font for the name */
   color: #000;   /* Black color for the text */
-  margin: 0;
+  margin: 0px;
 }
 
 .profile-text p {
