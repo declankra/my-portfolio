@@ -1,10 +1,13 @@
 
 # www.declankramper.me
-online portfolio for visibility and project hosting
+online portfolio for showcasing current tinkering; projects, blogs, etc.
+### notion page
+https://declankramper.notion.site/My-Online-Portfolio-23b32f724d974f9c905ea25c86e580a9?pvs=4
 
 
 
-### Created using React
+
+## Created using React
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 #### React app Scripts
