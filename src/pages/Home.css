@@ -65,10 +65,14 @@ main {
 
 /* Mobile styles */
 @media screen and (max-width: 767px) {
-  h1 {
-    font-size: 1.1rem;     /* Large, bold font for the name */
+  .profile-text h1 {
+    font-size: 1.5rem;     /* Large, bold font for the name */
     color: #000;     /* Black color for the text */
   }
+
+.profile-text p {
+  font-size: smaller;
+}
   p {
     font-size: .8rem;
   }
