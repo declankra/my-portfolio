@@ -8,6 +8,14 @@ const ProjectsGrid = () => {
     // Example data - this could come from a database or API in a real-world scenario
     const projects = [
         {
+            imageUrl: require(`../images/RaceTimePredictorAppIcon.jpeg`),
+            title: 'Race Time Predictor | First IOS App',
+            what: 'calculate your predicted running race times based off your Apple Watch data',
+            how: ' Xcode (SwiftUI), AppleHealthKit, App Store Connect',
+            why: "i run and need a ‘first’ app for incremental leaps",
+            url: 'https://declankramper.notion.site/Race-Time-Predictor-App-6a485fdb13d84d07ab26e2aa7c3b2de0?pvs=4'
+        },
+        {
             imageUrl: require(`../images/recordPlayer.jpeg`),
             title: 'Magic Record Player',
             what: 'magically play the soundtrack of your memories.',
@@ -39,6 +47,7 @@ const ProjectsGrid = () => {
             why: "it’s creative, visible, and a challenge",
             url: 'https://declankramper.notion.site/My-Online-Portfolio-23b32f724d974f9c905ea25c86e580a9?pvs=4'
         },
+       
        
         // ... more projects
     ];
