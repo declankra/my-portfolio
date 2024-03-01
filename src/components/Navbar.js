@@ -13,10 +13,10 @@ const Navbar = () => {
                 className={({ isActive }) =>
                     isActive ? 'nav-link active' : 'nav-link'}>
                 Home</NavLink></li>
-            <li><NavLink to="/contact" 
+            <li><NavLink to="/about" 
                 className={({ isActive }) =>
                     isActive ? 'nav-link active' : 'nav-link'}>
-                Contact</NavLink></li>
+                About</NavLink></li>
         </div>
     );
 }

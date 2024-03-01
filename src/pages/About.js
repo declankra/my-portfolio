@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Contact.css';
+import './About.css';
 
 const ResumeViewer = ({ title, subtitle, path }) => (
     <div className="resume-container">
@@ -15,7 +15,7 @@ const ResumeViewer = ({ title, subtitle, path }) => (
     </div>
 );
 
-function Contact() {
+function About() {
     const [selectedResume, setSelectedResume] = useState('PM');
     const resumes = {
         PM: {
@@ -33,8 +33,8 @@ function Contact() {
     return (
         <main>
             <section className='hero'>
-                <h1>Contact</h1>
-                <p>hello world</p>
+                <h1>About</h1>
+                <p>hello world. page is under construction. for now, here's some resumes.</p>
             </section>
             <section className='body'>
                 <div className='resume-section'>
@@ -49,4 +49,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default About;
