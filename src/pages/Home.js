@@ -1,6 +1,6 @@
 import React from "react";
 import './Home.css'
-import WhatAmIDoingNow from './WhatAmIDoingNow';
+import WhatAmIDoing from '../components/WhatAmIDoing';
 
 
 const Avatar = () => {
@@ -49,11 +49,10 @@ function Home() {
           </p>
         </div>
         <div className="doing-now">
-        <WhatAmIDoingNow />
+          <WhatAmIDoing />
         </div>
       </section>
 
-      {/* Rest of the homepage content */}
     </main>
   );
 };
