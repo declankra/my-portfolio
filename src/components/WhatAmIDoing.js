@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Card, CardContent, CardMedia, Typography, Chip, Link } from '@mui/material';
+import { Box, Card, Divider, CardContent, CardMedia, Typography, Chip, useTheme, useMediaQuery } from '@mui/material';
 
 const WhatAmIDoing = () => {
     const [projects, setProjects] = useState([]);
+    
+    // Responsive design hooks
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
     useEffect(() => {
         const fetchData = async () => {
@@ -43,42 +47,55 @@ const WhatAmIDoing = () => {
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        <Box display="flex" flexDirection="column" gap="20px">
             {projects.map((project, index) => (
-                <Card key={index} sx={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-                    <CardMedia
-                        component="img"
-                        sx={{ width: 151 }}
-                        image={project.image || 'default_image_url_here'} // Use lowercase 'image'
-                        alt={project.project} // Use lowercase 'project'
-                    />
-                    <CardContent sx={{ flex: '1 0 auto' }}>
-                        <Typography variant="h5" component="div">
-                            {project.project}
-                        </Typography>
-                        <Typography variant="subtitle1" color="text.secondary" component="div">
-                            {project.summary}
-                        </Typography>
-                        <Typography variant="subtitle2" color="text.secondary" component="div">
-                            {project.whyICare}
-                        </Typography>
-                        <div style={{ display: 'flex', flexDirection: 'row', gap: '10px', flexWrap: 'wrap', marginTop: '10px' }}>
-                            {project.tags.map((tag, i) => (
-                                <Chip key={i} label={tag} color="default" /> // Always default for tags as color logic isn't specified}
-                            ))}
-                        </div>
-                        <Chip label={project.status} color={getColor(project.status)} /> 
-                        <Typography variant="body2" color="text.secondary">
-                            Completion Date: {project.completionDate} 
-                        </Typography>
-                        <Link href={project.link} target="_blank" rel="noopener">
-                            Learn More
-                        </Link>
-                    </CardContent>
+                <Card key={index} sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                    <Box flex={1} display="flex" flexDirection="column" justifyContent="space-between">
+                        <CardContent>
+                            <Typography variant={isMobile ? "body2" : "h6"} component="div">
+                                {project.project}
+                            </Typography>
+                            <Typography variant={isMobile ? "caption" : "subtitle2"} color="text.secondary" component="div">
+                                {project.summary}
+                            </Typography>
+                            <Typography variant={isMobile ? "caption" : "subtitle2"} color="text.secondary" component="div">
+                                {project.whyICare}
+                            </Typography>
+                            <Box display="flex" flexDirection="row" gap="5px" flexWrap="wrap" my="10px">
+                                {project.tags.map((tag, i) => (
+                                    <Chip key={i} label={tag} color="default" size="small" />
+                                ))}
+                            </Box>
+                            <Divider />
+                            <Box display="flex" alignItems="center" gap="10px" my="10px">
+                                <Chip variant='outlined' label={project.status} color={getColor(project.status)} />
+                                <Typography variant="body2" color="text.tertiary">
+                                    ETA: {project.dueDate}
+                                </Typography>
+                            </Box>
+                        </CardContent>
+                    </Box>
+                    {!isMobile && (
+                        <CardMedia
+                            component="img"
+                            sx={{ width: 200, height: 'auto', objectFit: 'cover', objectPosition: 'center' }}
+                            image={project.image || 'default_image_url_here'}
+                            alt={project.project}
+                        />
+                    )}
                 </Card>
             ))}
-        </div>
+        </Box>
     );
 };
 
 export default WhatAmIDoing;
+
+/*
+
+                            <Link href={project.link} target="_blank" rel="noopener">
+                                learn More
+                            </Link>
+
+
+*/

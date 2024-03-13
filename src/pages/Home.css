@@ -1,5 +1,6 @@
 main {
-  height: 100vh;   /* This will take up the full viewport height */
+  height: 100vh;
+  /* This will take up the full viewport height */
 }
 
 .profile-container {
@@ -7,25 +8,32 @@ main {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: #fff;  /* Assuming a white background */
+  background: #fff;
+  /* Assuming a white background */
   text-align: center;
 }
 
 .profile-text h1 {
-  font-size: 2.5rem;   /* Large, bold font for the name */
-  color: #000;   /* Black color for the text */
+  font-size: 2.5rem;
+  /* Large, bold font for the name */
+  color: #000;
+  /* Black color for the text */
   margin: 0px;
 }
 
 .profile-text p {
-  font-size: 1rem;   /* Smaller font size for the subtitle */
-  color: #666;   /* Dark grey color for the subtitle */
+  font-size: 1rem;
+  /* Smaller font size for the subtitle */
+  color: #666;
+  /* Dark grey color for the subtitle */
 }
 
 .profile-avatar img {
-  width: 150px;   /* Adjust the size as needed */
+  width: 150px;
+  /* Adjust the size as needed */
   height: 150px;
-  object-fit: cover;   /* Ensures the image covers the area without stretching */
+  object-fit: cover;
+  /* Ensures the image covers the area without stretching */
 }
 
 .body {
@@ -33,22 +41,29 @@ main {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  flex-direction: column; /* Stacks flex items vertically */
+  flex-direction: column;
+  /* Stacks flex items vertically */
 }
 
 /* This ensures that the container of the WhatAmIDoing component is a flex container */
 .doing-now {
   display: flex;
-  justify-content: center; /* Centers horizontally in the flex container */
-  align-items: center; /* Centers vertically in the flex container */
-  flex-direction: column; /* Stacks flex items vertically */
-  width: 80%; /* Takes full width of its parent */
-  margin-top: 50px; /* Adds some space between this section and the previous content */
+  justify-content: center;
+  /* Centers horizontally in the flex container */
+  align-items: center;
+  /* Centers vertically in the flex container */
+  flex-direction: column;
+  /* Stacks flex items vertically */
+  width: 80%;
+  /* Takes full width of its parent */
+  margin-top: 50px;
+  /* Adds some space between this section and the previous content */
 }
 
 .welcome-message {
   max-width: 45%;
-  margin-right: 20%; /* This will push the container to the right */
+  margin-right: 20%;
+  /* This will push the container to the right */
   text-align: left;
   background-color: #F0F0F0;
   padding: 10px;
@@ -56,11 +71,15 @@ main {
 }
 
 .body a {
-  color: #0077cc; /* Example link color */
-  text-decoration: none; /* Removes underline */
+  color: #0077cc;
+  /* Example link color */
+  text-decoration: none;
+  /* Removes underline */
 }
+
 .body a:hover {
-  text-decoration: underline; /* Adds underline on hover for visual feedback */
+  text-decoration: underline;
+  /* Adds underline on hover for visual feedback */
 }
 
 .body h2 {
@@ -77,21 +96,26 @@ main {
 /* Mobile styles */
 @media screen and (max-width: 767px) {
   .profile-text h1 {
-    font-size: 1.8rem;     /* Large, bold font for the name */
-    color: #000;     /* Black color for the text */
+    font-size: 1.8rem;
+    /* Large, bold font for the name */
+    color: #000;
+    /* Black color for the text */
   }
 
-.profile-text p {
-  font-size: smaller;
-}
+  .profile-text p {
+    font-size: smaller;
+  }
+
   p {
     font-size: .8rem;
   }
+
   .profile-avatar img {
     margin-left: 5px;
   }
+
   h2 {
-    font-size: 1.0rem;     
+    font-size: 1.0rem;
 
   }
 }
