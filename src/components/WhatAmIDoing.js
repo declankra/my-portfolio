@@ -47,7 +47,7 @@ const WhatAmIDoing = () => {
     };
 
     return (
-        <Box display="flex" flexDirection="column" gap="20px">
+        <Box display="flex" flexDirection="column" gap="20px" marginTop={'10px'}>
             {projects.map((project, index) => (
                 <Card key={index} sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                     <Box flex={1} display="flex" flexDirection="column" justifyContent="space-between">

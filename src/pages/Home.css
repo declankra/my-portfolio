@@ -107,7 +107,7 @@ main {
   }
 
   p {
-    font-size: .8rem;
+    font-size: .85rem;
   }
 
   .profile-avatar img {
@@ -115,7 +115,17 @@ main {
   }
 
   h2 {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
 
+  }
+
+  .welcome-message {
+    max-width: 70%;
+    margin-right: 18%;
+    /* This will push the container to the right */
+    text-align: left;
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-radius: 8px;
   }
 }
