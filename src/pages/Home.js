@@ -52,7 +52,6 @@ function Home() {
           <WhatAmIDoing />
         </div>
       </section>
-
     </main>
   );
 };
