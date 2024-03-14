@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import WebFont from 'webfontloader';
+import { ThemeProvider } from '@mui/material/styles'; // Import ThemeProvider
+import theme from './styles/muiTheme'; // Import your custom theme
 
 WebFont.load({
   google: {
@@ -22,8 +24,10 @@ WebFont.load({
 const root = createRoot(document.getElementById('root')); // Use createRoot
 root.render(
   <React.StrictMode>
+    <ThemeProvider theme={theme}> {/* Wrap App with ThemeProvider */}
     <BrowserRouter>
       <App />
     </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Card, Divider, CardContent, CardMedia, Typography, Chip, useTheme, useMediaQuery } from '@mui/material';
 
+
 const WhatAmIDoing = () => {
     const [projects, setProjects] = useState([]);
     
@@ -52,16 +53,16 @@ const WhatAmIDoing = () => {
                 <Card key={index} sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                     <Box flex={1} display="flex" flexDirection="column" justifyContent="space-between">
                         <CardContent>
-                            <Typography variant={isMobile ? "body2" : "h6"} component="div">
+                            <Typography sx={{typography: 'title'}} component="div">
                                 {project.project}
                             </Typography>
-                            <Typography variant={isMobile ? "caption" : "subtitle2"} color="text.secondary" component="div">
+                            <Typography sx={{ typography: 'subtitle', color: 'primary.main'}} component="div">
                                 {project.summary}
                             </Typography>
-                            <Typography variant={isMobile ? "caption" : "subtitle2"} color="text.secondary" component="div">
+                            <Typography sx={{ typography: 'body'}} component="div">
                                 {project.whyICare}
                             </Typography>
-                            <Box display="flex" flexDirection="row" gap="5px" flexWrap="wrap" my="10px">
+                            <Box display="flex" flexDirection="row" gap="10px" flexWrap="wrap" my="10px">
                                 {project.tags.map((tag, i) => (
                                     <Chip key={i} label={tag} color="default" size="small" />
                                 ))}
@@ -69,7 +70,7 @@ const WhatAmIDoing = () => {
                             <Divider />
                             <Box display="flex" alignItems="center" gap="10px" my="10px">
                                 <Chip variant='outlined' label={project.status} color={getColor(project.status)} />
-                                <Typography variant="body2" color="text.tertiary">
+                                <Typography sx={{ typography: 'extraText' }}>
                                     ETA: {project.dueDate}
                                 </Typography>
                             </Box>
