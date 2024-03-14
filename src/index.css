@@ -11,14 +11,14 @@
     font-weight: 600;
   }
 
-  p, a {
+  p {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 400;
   }
 
-  li {
+  li, a {
     font-family: 'Titillium Web', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   body {
