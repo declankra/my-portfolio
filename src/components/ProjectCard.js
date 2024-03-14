@@ -14,16 +14,16 @@ const ProjectCard = ({ imageUrl, title, what, how, why, url }) => {
             style={{ objectFit: 'cover', objectPosition: 'center' }}
           />
           <CardContent sx={{ cursor: 'pointer' }}>
-            <Typography gutterBottom variant="h5" component="div">
+            <Typography sx={{ typography: 'titleProjectCard' }} component="div">
               {title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography sx={{ typography: 'bodyProjectCard' }}>
               <strong>What:</strong> {what}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography sx={{ typography: 'bodyProjectCard' }}>
               <strong>How:</strong> {how}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography sx={{ typography: 'bodyProjectCard' }}>
               <strong>Why:</strong> {why}
             </Typography>
           </CardContent>
