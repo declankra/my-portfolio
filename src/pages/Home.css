@@ -1,6 +1,5 @@
 main {
-  height: 100vh;
-  /* This will take up the full viewport height */
+  padding-bottom: 10px;
 }
 
 .profile-container {
