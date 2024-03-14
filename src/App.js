@@ -9,6 +9,8 @@ import About from './pages/About';
 import Health from './pages/Health';
 import BCG from './pages/BCG';
 import Goals from './pages/Goals';
+import Resume from './pages/Resume';
+
 
 
 import TagManager from 'react-gtm-module'
@@ -30,6 +32,7 @@ function App() {
           <Route path="/health" element={<Health />} />
           <Route path="/bcg" element={<BCG />} />
           <Route path="/goals" element={<Goals />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
       <Footer />
