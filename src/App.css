@@ -1,9 +1,11 @@
   .App {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
   }
   
   .ContentWrapper {
-    overflow-y: auto; /* Ensures content within wrapper is scrollable if it exceeds viewport */
+    flex: 1;
+    overflow-y: auto; /* Keeps existing scroll behavior if content exceeds viewport */
+    padding-bottom: 20px; /* Adds a bit of padding at the bottom for spacing */
   }
