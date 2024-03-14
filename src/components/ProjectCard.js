@@ -17,13 +17,13 @@ const ProjectCard = ({ imageUrl, title, what, how, why, url }) => {
             <Typography sx={{ typography: 'titleProjectCard' }} component="div">
               {title}
             </Typography>
-            <Typography sx={{ typography: 'bodyProjectCard' }}>
+            <Typography sx={{ typography: 'bodyProjectCard', color: 'black' }}>
               <strong>What:</strong> {what}
             </Typography>
-            <Typography sx={{ typography: 'bodyProjectCard' }}>
+            <Typography sx={{ typography: 'bodyProjectCard', color: 'black' }}>
               <strong>How:</strong> {how}
             </Typography>
-            <Typography sx={{ typography: 'bodyProjectCard' }}>
+            <Typography sx={{ typography: 'bodyProjectCard', color: 'black' }}>
               <strong>Why:</strong> {why}
             </Typography>
           </CardContent>
