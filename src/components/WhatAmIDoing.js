@@ -12,22 +12,28 @@ const WhatAmIDoing = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Check if data is already fetched and stored
-                const storedProjects = sessionStorage.getItem('projects');
-                if (storedProjects) {
-                    setProjects(JSON.parse(storedProjects));
-                    return;
+                const cacheTimestamp = sessionStorage.getItem('cacheTimestamp');
+                const now = new Date();
+
+                // Check if 6 hours have passed since the last fetch
+                if (cacheTimestamp && now - new Date(cacheTimestamp) < 6 * 60 * 60 * 1000) {
+                    const storedProjects = sessionStorage.getItem('projects');
+                    if (storedProjects) {
+                        setProjects(JSON.parse(storedProjects));
+                        return;
+                    }
                 }
-    
-                const response = await fetch('https://storage.googleapis.com/notion-projects-database_component-source/simplifiedNotionData.json');
+
+                // Append timestamp to avoid browser cache
+                const response = await fetch(`https://storage.googleapis.com/notion-projects-database_component-source/simplifiedNotionData.json?timestamp=${new Date().getTime()}`);
                 if (!response.ok) throw new Error('Network response was not ok');
-    
+
                 const data = await response.json();
                 sessionStorage.setItem('projects', JSON.stringify(data)); // Cache data in session storage
+                sessionStorage.setItem('cacheTimestamp', new Date()); // Update timestamp
                 setProjects(data); // Update to use directly fetched data
             } catch (error) {
                 console.error('Fetch error:', error);
-                // Handle the error (show a message, etc.)
             }
         };
     
