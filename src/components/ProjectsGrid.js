@@ -16,6 +16,14 @@ const ProjectsGrid = () => {
             url: 'https://declankramper.notion.site/Race-Time-Predictor-App-6a485fdb13d84d07ab26e2aa7c3b2de0?pvs=4'
         },
         {
+            imageUrl: require(`../images/projectDbIntegration.jpeg`),
+            title: 'Project Database & Live Component Integration',
+            what: "organize, manage, and track my personal projects with a live feature displaying 'in progress' projects on the homepage",
+            how: "pub/sub scheduler triggers gcloud function (<-> notion API) that stores json in gcloud bucket and is fetched/rendered on FE",
+            why: "clearer focus on my work and a cool dynamic component for ownership",
+            url: 'https://declankramper.notion.site/Project-Database-Component-Integration-d8153c0d24d84274befe99ba4056604f?pvs=4'
+        },
+        {
             imageUrl: require(`../images/recordPlayer.jpeg`),
             title: 'Magic Record Player',
             what: 'magically play the soundtrack of your memories.',
