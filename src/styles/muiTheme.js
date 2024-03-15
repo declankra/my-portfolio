@@ -5,15 +5,19 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#0d3dce', // The main primary color used throughout the app
-            light: '#7f8cff', // Lighter shade of the primary color
-            dark: '#0043a4', // Darker shade of the primary color
+            main: '#0d3dc3', // The main primary color used throughout the app = blue
+            light: '#67dfed', // Lighter shade of the primary color = light blue
+            dark: '#0043a4',
             contrastText: '#ffffff', // Text color that ensures legibility with the primary color
         },
         secondary: {
-            main: '#19857b',
+            main: '#8d8d92', // taupe gray
             contrastText: '#000000',
             // Additional customizations can be done similarly
+        },
+        background: {
+            primary: '#fff', //white
+            secondary: '#f0f0f0', //anit-flash white
         },
         error: {
             main: '#f44336',
@@ -28,9 +32,12 @@ const theme = createTheme({
             main: '#4caf50',
         },
         text: {
-            primary: '#212121',
-            secondary: '#757575',
+            primary: '#080708', // black
+            jet: '#333',
+            secondary: '#8d8d92', // taupe gray
             disabled: '#9e9e9e',
+            link: '0d3dc3',// blue
+            hover: '67dfed', // light blue
         },
         // Define more colors as needed
     },
@@ -83,7 +90,7 @@ const theme = createTheme({
         },
         bodyProjectCard: {
             fontSize: '.9rem',
-            fontWeight: 300, // Normal body text
+            fontWeight: 400, 
             '@media (max-width:600px)': {
                 fontSize: '0.75rem', // Smaller body text on mobile
             },
