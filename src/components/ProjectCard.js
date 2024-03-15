@@ -14,7 +14,7 @@ const ProjectCard = ({ imageUrl, title, what, how, why, url }) => {
             style={{ objectFit: 'cover', objectPosition: 'center' }}
           />
           <CardContent sx={{ cursor: 'pointer' }}>
-            <Typography sx={{ typography: 'titleProjectCard' }} component="div">
+            <Typography sx={{ typography: 'titleProjectCard', color: 'text.primary' }} component="div">
               {title}
             </Typography>
             <Typography sx={{ typography: 'bodyProjectCard', color: 'text.secondary' }}>
