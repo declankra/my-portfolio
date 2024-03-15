@@ -33,8 +33,9 @@ const theme = createTheme({
         },
         text: {
             primary: '#080708', // black
-            jet: '#333',
             secondary: '#8d8d92', // taupe gray
+            tretiary: '#c8bfc7', // french gray
+            jet: '#333', 
             disabled: '#9e9e9e',
             link: '0d3dc3',// blue
             hover: '67dfed', // light blue

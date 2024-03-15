@@ -62,7 +62,7 @@ const WhatAmIDoing = () => {
                             <Typography sx={{typography: 'title'}} component="div">
                                 {project.project}
                             </Typography>
-                            <Typography sx={{ typography: 'subtitle', color: 'primary.main'}} component="div">
+                            <Typography sx={{ typography: 'subtitle', color: 'text.secondary', paddingBottom: '5px'}} component="div">
                                 {project.summary}
                             </Typography>
                             <Typography sx={{ typography: 'body'}} component="div">
