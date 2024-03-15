@@ -1,38 +1,61 @@
 /* Apply globally in your main CSS file */
+:root {
+  --primary-color: #0d3dc3; /* Adjust with your primary brand color */
+  --secondary-color: #8d8d92; /* Your secondary color */
+  --tretiary-color: #c8bfc7;
+  --background-color: #f8f8f8; /* Background color for the website */
+  --text-color: #080708; /* Primary text color */
+  --secondary-text-color: #8d8d92;
+  --tretiary-text-color: #c8bfc7;
+  --link-color: #0d3dc3; /* Hyperlink color */
+  --link-hover-color: #67dfed; /* Hyperlink hover state color */
+  --font-light-weight: 200; /* Light weight for fonts */
+  --font-normal-weight: 400; /* Normal weight for fonts */
+  --font-semi-bold-weight: 600; /* Semi-bold weight for fonts */
+  --font-bold-weight: 700; /* Bold weight for fonts */
+  --font-extra-bold-weight: 800; /* Extra-bold weight for fonts */
+}
 
-  
+  body {
+  font-family: 'Inconsolata', sans-serif;
+  color: var(--text-color); /* Use variable for text color */
+  }
+
   h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700; /* Use the semi-bold weight for Poppins */
+    font-weight: var(--font-bold-weight);
   }
   
   h2, h3 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: var(--font-semi-bold-weight);
   }
 
-  p {
+  p, li {
     font-family: 'Titillium Web', sans-serif;
-    font-weight: 400;
+    font-weight: var(--font-normal-weight);
   }
 
   a {
     font-family: 'Titillium Web', sans-serif;
-    font-weight: 800;
+    font-weight: var(--font-extra-bold-weight);
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--link-hover-color); /* Color for hover state */
   }
 
   li {
     list-style-type: square;
-  }
-
-  body {
-    font-family: 'Inconsolata', sans-serif;
+    color: var(--secondary-text-color);
   }
   
   code, pre {
-    font-family: 'Inconsolata', monospace;
-    font-weight: 200; /* Use the light weight for a more refined look */
-  }
+  font-family: 'Inconsolata', monospace;
+  font-weight: var(--font-light-weight); /* Use the light weight variable */
+  } 
   
  
   
