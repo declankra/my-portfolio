@@ -40,11 +40,16 @@
   
   .resume-button {
     background: white;
-    color: blue;
+    color: var(--link-color);
     border: none;
     cursor: pointer;
     padding: 5px;
     margin: 0 5px; /* Added for spacing between buttons */
+    font-size:large;
+  }
+
+  .resume-button:hover {
+    color: var(--link-hover-color);
   }
   
   @media screen and (max-width: 767px) {
