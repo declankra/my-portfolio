@@ -7,23 +7,20 @@ main {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: #fff;
+  background: var(--background-color);
   /* Assuming a white background */
   text-align: center;
 }
 
 .profile-text h1 {
   font-size: 2.5rem;
-  /* Large, bold font for the name */
-  color: #000;
-  /* Black color for the text */
   margin: 0px;
 }
 
 .profile-text p {
   font-size: 1rem;
   /* Smaller font size for the subtitle */
-  color: #666;
+  color: var(--secondary-text-color);
   /* Dark grey color for the subtitle */
 }
 
@@ -44,6 +41,23 @@ main {
   /* Stacks flex items vertically */
 }
 
+.body h2 {
+  margin: 0;
+}
+
+.welcome-message {
+  max-width: 45%;
+  margin-right: 20%;
+  /* This will push the container to the right */
+  text-align: left;
+  background-color: var(--secondary-background-color);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+
+
+
 /* This ensures that the container of the WhatAmIDoing component is a flex container */
 .doing-now {
   display: flex;
@@ -58,33 +72,6 @@ main {
   margin-top: 50px;
   /* Adds some space between this section and the previous content */
 }
-
-.welcome-message {
-  max-width: 45%;
-  margin-right: 20%;
-  /* This will push the container to the right */
-  text-align: left;
-  background-color: #F0F0F0;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.body a {
-  color: #0077cc;
-  /* Example link color */
-  text-decoration: none;
-  /* Removes underline */
-}
-
-.body a:hover {
-  text-decoration: underline;
-  /* Adds underline on hover for visual feedback */
-}
-
-.body h2 {
-  margin: 0;
-}
-
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .profile-avatar img {
@@ -97,8 +84,6 @@ main {
   .profile-text h1 {
     font-size: 1.8rem;
     /* Large, bold font for the name */
-    color: #000;
-    /* Black color for the text */
   }
 
   .profile-text p {
@@ -123,7 +108,6 @@ main {
     margin-right: 18%;
     /* This will push the container to the right */
     text-align: left;
-    background-color: #F0F0F0;
     padding: 10px;
     border-radius: 8px;
   }

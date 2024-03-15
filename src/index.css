@@ -3,9 +3,10 @@
   --primary-color: #0d3dc3; /* Adjust with your primary brand color */
   --secondary-color: #8d8d92; /* Your secondary color */
   --tretiary-color: #c8bfc7;
-  --background-color: #f8f8f8; /* Background color for the website */
+  --background-color: #fff; /* Background color for the website */
+  --secondary-background-color: #f0f0f0;
   --text-color: #080708; /* Primary text color */
-  --text-color-jet: #333;
+  --text-color-jet: #333; /* Jet color */
   --secondary-text-color: #8d8d92;
   --tretiary-text-color: #c8bfc7;
   --link-color: #0d3dc3; /* Hyperlink color */
@@ -42,6 +43,7 @@
     font-weight: var(--font-extra-bold-weight);
     color: var(--link-color);
     text-decoration: none;
+    cursor: pointer
   }
 
   a:hover {
