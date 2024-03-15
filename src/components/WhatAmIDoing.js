@@ -15,7 +15,7 @@ const WhatAmIDoing = () => {
                 const cacheTimestamp = sessionStorage.getItem('cacheTimestamp');
                 const now = new Date();
 
-                // Check if 6 hours have passed since the last fetch
+                // Check if 5 hours have passed since the last fetch
                 if (cacheTimestamp && now - new Date(cacheTimestamp) < 5 * 60 * 60 * 1000) {
                     const storedProjects = sessionStorage.getItem('projects');
                     if (storedProjects) {
