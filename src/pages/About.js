@@ -14,7 +14,6 @@ function About() {
         <main>
             <section className='hero'>
                 <h1>About</h1>
-                <p>this page is under construction just like me</p>
             </section>
 
             <div className = 'body'>
