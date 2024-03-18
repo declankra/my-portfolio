@@ -34,7 +34,7 @@ function About() {
                 <p>or in person</p>
                 <li><a href = "https://www.strava.com/athletes/98367252">running</a> on the lakeshore path</li>
                 <li>trying a new <a href = "https://www.icloud.com/notes/09eYa9zcbOnblaYQQ4n6YD7NQ#Coffee_shop_rankings">coffee shop</a></li>
-                <li>riding a divvy bike at night</li>                
+                <li>riding a divvy bike</li>                
             </div>
             
             <h3>If a convential resume interests you...</h3>
