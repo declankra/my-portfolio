@@ -8,6 +8,14 @@ const ProjectsGrid = () => {
     // Example data - this could come from a database or API in a real-world scenario
     const projects = [
         {
+            imageUrl: require(`../images/MeetOrNot.jpeg`),
+            title: 'Meet or Not | AI-powered Web Application for Your Shitty Meetings',
+            what: '[alpha version (no code)] web app to save you time and energy when creating your next meeting',
+            how: 'determines if a meeting is needed (logical checks) and if so, creates an effective meeting agenda (OpenAI GPT-4 integration)',
+            why: "to learn more about generative AI applications ",
+            url: 'https://meetornot.io'
+        },
+        {
             imageUrl: require(`../images/RaceTimePredictorAppIcon.jpeg`),
             title: 'Race Time Predictor | First IOS App',
             what: 'calculate your predicted running race times based off your Apple Watch data',
