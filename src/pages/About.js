@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import XIcon from '@mui/icons-material/X';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 
@@ -26,9 +27,13 @@ function About() {
                         <LinkedInIcon sx={{ fontSize: 45, color: 'blue' }} />
                     </a>
                     {/* GitHub Icon */}
-                    <a href="https://github.com/declankra" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/declankra" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
                         <GitHubIcon sx={{ fontSize: 40, color: 'black' }} />
                     </a>
+                    {/* Twitter Icon */}
+                    <a href="https://twitter.com/asbestostrades" target="_blank" rel="noopener noreferrer">
+                            <XIcon sx={{ fontSize: 40, color: 'blue' }} />
+                       </a>
                 </div>
 
                 <p>or in person</p>
@@ -39,7 +44,7 @@ function About() {
             
             <h3>If a convential resume interests you...</h3>
             {/* PDF Icon */}
-            <a href="https://www.declankramper.me/resume" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
+            <a href="https://www.declankramper.me/resume" style={{ marginRight: '10px' }}>
                         <ContactPageIcon sx={{ fontSize: 45, color: 'black' }} />
                     </a>
             <p>here's mine. but im hoping to tell that story differently.</p>

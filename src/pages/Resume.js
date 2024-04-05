@@ -37,8 +37,8 @@ function Resume() {
     return (
         <main>
             {/* Back Icon */}
-            <a href="https://www.declankramper.me/about" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
-                <ArrowBackIcon sx={{ fontSize: 40, color: 'blue' }} />
+            <a href="https://www.declankramper.me/about" style={{ marginRight: '10px' }}>
+            <ArrowBackIcon sx={{ fontSize: 40, color: 'blue' }} />
             </a>
             <h1>Resume</h1>
             <div className='resume-section'>
