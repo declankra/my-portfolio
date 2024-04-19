@@ -10,6 +10,7 @@ import Health from './pages/Health';
 import BCG from './pages/BCG';
 import Goals from './pages/Goals';
 import Resume from './pages/Resume';
+import Manual from './pages/Manual';
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/bcg" element={<BCG />} />
           <Route path="/goals" element={<Goals />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/manual" element={<Manual />} />
         </Routes>
       </div>
       <Footer />

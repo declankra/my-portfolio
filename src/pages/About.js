@@ -4,8 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
-
-
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 
 function About() {
@@ -41,7 +40,14 @@ function About() {
                 <li>trying a new <a href = "https://www.icloud.com/notes/09eYa9zcbOnblaYQQ4n6YD7NQ#Coffee_shop_rankings">coffee shop</a></li>
                 <li>riding a divvy bike</li>                
             </div>
+
+            <h3>Working with me?</h3>
+            <a href="https://www.declankramper.me/manual" style={{ marginRight: '10px' }}>
+                        <PictureAsPdfIcon sx={{ fontSize: 45, color: 'black' }} />
+                    </a>
+            <p>here's a guide to getting the most out of it.</p>
             
+
             <h3>If a convential resume interests you...</h3>
             {/* PDF Icon */}
             <a href="https://www.declankramper.me/resume" style={{ marginRight: '10px' }}>
