@@ -48,7 +48,7 @@ function About() {
             <p>here's a guide to getting the most out of it.</p>
             
 
-            <h3>If a convential resume interests you...</h3>
+            <h3>If a conventional resume interests you...</h3>
             {/* PDF Icon */}
             <a href="https://www.declankramper.me/resume" style={{ marginRight: '10px' }}>
                         <ContactPageIcon sx={{ fontSize: 45, color: 'black' }} />
