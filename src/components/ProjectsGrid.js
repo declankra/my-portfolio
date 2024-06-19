@@ -8,14 +8,6 @@ const ProjectsGrid = () => {
     // Example data - this could come from a database or API in a real-world scenario
     const projects = [
         {
-            imageUrl: require(`../images/MeetOrNot.jpeg`),
-            title: 'Meet or Not | AI-powered Web Application for Your Shitty Meetings',
-            what: '[alpha version (no code)] web app to save you time and energy when creating your next meeting',
-            how: 'determines if a meeting is needed (logical checks) and if so, creates an effective meeting agenda (OpenAI GPT-4 integration)',
-            why: "to learn more about generative AI applications ",
-            url: 'https://meetornot.io'
-        },
-        {
             imageUrl: require(`../images/RaceTimePredictorAppIcon.jpeg`),
             title: 'Race Time Predictor | First IOS App',
             what: 'calculate your predicted running race times based off your Apple Watch data',
@@ -24,20 +16,28 @@ const ProjectsGrid = () => {
             url: 'https://declankramper.notion.site/Race-Time-Predictor-App-6a485fdb13d84d07ab26e2aa7c3b2de0?pvs=4'
         },
         {
-            imageUrl: require(`../images/projectDbIntegration.jpeg`),
-            title: 'Project Database & Live Component Integration',
-            what: "organize, manage, and track my personal projects with a live feature displaying 'in progress' projects on the homepage",
-            how: "pub/sub scheduler triggers gcloud function (<-> notion API) that stores json in gcloud bucket and is fetched/rendered on FE",
-            why: "clearer focus on my work and a cool dynamic component for ownership",
-            url: 'https://declankramper.notion.site/Project-Database-Component-Integration-d8153c0d24d84274befe99ba4056604f?pvs=4'
-        },
-        {
             imageUrl: require(`../images/recordPlayer.jpeg`),
             title: 'Magic Record Player',
             what: 'magically play the soundtrack of your memories.',
             how: 'a raspberry pi running a python script to interact with NFC tagged photos',
             why: 'create a special gift for the special people in my life while learning how to build an idea inspired by Harry Potter',
             url: 'https://declankramper.notion.site/NFC-Record-Player-Build-bf95a606cc474c11a626b50821fb12d4?pvs=4'
+        },
+        {
+            imageUrl: require(`../images/MeetOrNot.jpeg`),
+            title: 'Meet or Not | AI-powered Web Application for Your Shitty Meetings',
+            what: '[alpha version (no code)] web app to save you time and energy when creating your next meeting',
+            how: 'determines if a meeting is needed (logical checks) and if so, creates an effective meeting agenda (OpenAI GPT-4 integration)',
+            why: "to learn more about generative AI applications ",
+            url: 'https://meetornot.io'
+        },
+        {
+            imageUrl: require(`../images/projectDbIntegration.jpeg`),
+            title: 'Project Database & Live Component Integration',
+            what: "organize, manage, and track my personal projects with a live feature displaying 'in progress' projects on the homepage",
+            how: "pub/sub scheduler triggers gcloud function (<-> notion API) that stores json in gcloud bucket and is fetched/rendered on FE",
+            why: "clearer focus on my work and a cool dynamic component for ownership",
+            url: 'https://declankramper.notion.site/Project-Database-Component-Integration-d8153c0d24d84274befe99ba4056604f?pvs=4'
         },
         {
             imageUrl: require(`../images/healthVizSc.jpeg`),

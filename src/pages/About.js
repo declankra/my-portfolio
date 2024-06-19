@@ -5,7 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 
 function About() {
 
@@ -20,18 +20,22 @@ function About() {
             <div className='findMe' style={{ display: 'grid', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
                 <h3>You can find me...</h3>
                 <p >elsewhere on the intenet</p>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px'}}>
                     {/* LinkedIn Icon */}
-                    <a href="https://www.linkedin.com/in/declan-kramper" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
+                    <a href="https://www.linkedin.com/in/declan-kramper" target="_blank" rel="noopener noreferrer" style={{ marginRight: '8px', marginLeft: '8px' }}>
                         <LinkedInIcon sx={{ fontSize: 45, color: 'blue' }} />
                     </a>
                     {/* GitHub Icon */}
-                    <a href="https://github.com/declankra" target="_blank" rel="noopener noreferrer" style={{ marginRight: '10px' }}>
+                    <a href="https://github.com/declankra" target="_blank" rel="noopener noreferrer" style={{ marginRight: '8px', marginLeft: '8px' }}>
                         <GitHubIcon sx={{ fontSize: 40, color: 'black' }} />
                     </a>
                     {/* Twitter Icon */}
-                    <a href="https://twitter.com/asbestostrades" target="_blank" rel="noopener noreferrer">
+                    <a href="https://twitter.com/asbestostrades" target="_blank" rel="noopener noreferrer" style={{ marginRight: '8px', marginLeft: '8px' }}>
                             <XIcon sx={{ fontSize: 40, color: 'blue' }} />
+                       </a>
+                    {/* Goodreads Icon */}
+                    <a href="https://www.goodreads.com/user/show/156508418-declan" target="_blank" rel="noopener noreferrer" style={{ marginRight: '8px', marginLeft: '8px' }}>
+                            <AutoStoriesIcon sx={{ fontSize: 45, color: 'black' }} />
                        </a>
                 </div>
 
