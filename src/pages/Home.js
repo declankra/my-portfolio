@@ -4,7 +4,7 @@ import WhatAmIDoing from '../components/WhatAmIDoing';
 
 
 const Avatar = () => {
-  const avatarPath = process.env.PUBLIC_URL + 'Avatar_ME_PS.jpeg'
+  const avatarPath = process.env.PUBLIC_URL + 'Avatar_ME_PS.webp'
   return (
     <img className="avatar"
       src={avatarPath}

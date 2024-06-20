@@ -1,14 +1,14 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 import ProjectCard from './ProjectCard';
-//import recordPlayerImage from '../images/recordPlayer.jpeg'; // Adjust the path as per your directory structure
+//import recordPlayerImage from '../images/recordPlayer.webp'; // Adjust the path as per your directory structure
 
 
 const ProjectsGrid = () => {
     // Example data - this could come from a database or API in a real-world scenario
     const projects = [
         {
-            imageUrl: require(`../images/RaceTimePredictorAppIcon.jpeg`),
+            imageUrl: require(`../images/RaceTimePredictorAppIcon.webp`),
             title: 'Race Time Predictor | First IOS App',
             what: 'calculate your predicted running race times based off your Apple Watch data',
             how: ' Xcode (SwiftUI), AppleHealthKit, App Store Connect',
@@ -16,7 +16,7 @@ const ProjectsGrid = () => {
             url: 'https://declankramper.notion.site/Race-Time-Predictor-App-6a485fdb13d84d07ab26e2aa7c3b2de0?pvs=4'
         },
         {
-            imageUrl: require(`../images/recordPlayer.jpeg`),
+            imageUrl: require(`../images/recordPlayer.webp`),
             title: 'Magic Record Player',
             what: 'magically play the soundtrack of your memories.',
             how: 'a raspberry pi running a python script to interact with NFC tagged photos',
@@ -24,7 +24,7 @@ const ProjectsGrid = () => {
             url: 'https://declankramper.notion.site/NFC-Record-Player-Build-bf95a606cc474c11a626b50821fb12d4?pvs=4'
         },
         {
-            imageUrl: require(`../images/MeetOrNot.jpeg`),
+            imageUrl: require(`../images/MeetOrNot.webp`),
             title: 'Meet or Not | AI-powered Web Application for Your Shitty Meetings',
             what: '[alpha version (no code)] web app to save you time and energy when creating your next meeting',
             how: 'determines if a meeting is needed (logical checks) and if so, creates an effective meeting agenda (OpenAI GPT-4 integration)',
@@ -40,7 +40,7 @@ const ProjectsGrid = () => {
             url: 'https://github.com/declankra/soundcloudToMp3'
         },
         {
-            imageUrl: require(`../images/projectDbIntegration.jpeg`),
+            imageUrl: require(`../images/projectDbIntegration.webp`),
             title: 'Project Database & Live Component Integration',
             what: "organize, manage, and track my personal projects with a live feature displaying 'in progress' projects on the homepage",
             how: "pub/sub scheduler triggers gcloud function (<-> notion API) that stores json in gcloud bucket and is fetched/rendered on FE",
@@ -48,7 +48,7 @@ const ProjectsGrid = () => {
             url: 'https://declankramper.notion.site/Project-Database-Component-Integration-d8153c0d24d84274befe99ba4056604f?pvs=4'
         },
         {
-            imageUrl: require(`../images/healthVizSc.jpeg`),
+            imageUrl: require(`../images/healthDashboard.webp`),
             title: 'Health Dashboard | "Whoop app" for Apple Watch',
             what: 'a live dashboard of my health goals',
             how: 'google cloud functions and APIs send data to google sheets that is sourced in looker studio report',
@@ -56,7 +56,7 @@ const ProjectsGrid = () => {
             url: 'https://www.declankramper.me/health'
         },
         {
-            imageUrl: require(`../images/goalsComponentSketch.jpeg`),
+            imageUrl: require(`../images/goalsComponentSketch.webp`),
             title: 'Visual Goal Tracker',
             what: 'visual progress towards my 2024 goals',
             how: 'FE React fetch API gets data from a google sheet (db) which is populated by external APIs',
@@ -64,7 +64,7 @@ const ProjectsGrid = () => {
             url: 'https://www.declankramper.me/goals'
         },
         {
-            imageUrl: require(`../images/declanKramperCropped.jpeg`),
+            imageUrl: require(`../images/declanKramperCropped.webp`),
             title: 'Personal Portfolio',
             what: 'personal website to showcases my personal projects, declankramper.me',
             how: 'web dev tools and figuring it out',
