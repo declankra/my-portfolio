@@ -32,6 +32,14 @@ const ProjectsGrid = () => {
             url: 'https://meetornot.io'
         },
         {
+            imageUrl: require(`../images/soundcloud.webp`),
+            title: 'Souncloud Downloader',
+            what: 'easily download songs from soundcloud, with option for entire playlist at once',
+            how: 'python script and fancy error handling',
+            why: 'so DJs can make the people dance, for free',
+            url: 'https://github.com/declankra/soundcloudToMp3'
+        },
+        {
             imageUrl: require(`../images/projectDbIntegration.jpeg`),
             title: 'Project Database & Live Component Integration',
             what: "organize, manage, and track my personal projects with a live feature displaying 'in progress' projects on the homepage",
