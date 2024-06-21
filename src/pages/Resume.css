@@ -36,6 +36,9 @@
   .resume-switch {
     text-align: center;
     margin-bottom: 20px; /* Added for spacing */
+    display: flex; /* Added to display buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Added for spacing between buttons */
   }
   
   .resume-button {
@@ -50,6 +53,11 @@
 
   .resume-button:hover {
     color: var(--link-hover-color);
+    
+  }
+
+  .resume-button.selected {
+    color: var(--secondary-color);
   }
   
   @media screen and (max-width: 767px) {

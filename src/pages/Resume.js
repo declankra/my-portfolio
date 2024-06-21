@@ -19,17 +19,22 @@ const ResumeViewer = ({ title, subtitle, path }) => (
 
 function Resume() {
 
-    const [selectedResume, setSelectedResume] = useState('PM');
+    const [selectedResume, setSelectedResume] = useState('TR');
     const resumes = {
         PM: {
             title: "Product Development Resume",
             subtitle: "June 2023",
             path: process.env.PUBLIC_URL + '/DeclanKramper_Resume_PM.pdf',
         },
-        TD: {
+        DA: {
             title: "Delivery Analyst Resume",
             subtitle: "Feb 2024",
             path: process.env.PUBLIC_URL + '/DeclanKramper_Resume_DeliveryAnalyst.pdf',
+        },
+        TR: {
+            title: "Trader Resume",
+            subtitle: "June 2024",
+            path: process.env.PUBLIC_URL + '/DeclanKramper_Resume_Trader.pdf',
         }
     };
 
@@ -43,8 +48,9 @@ function Resume() {
             <h1>Resume</h1>
             <div className='resume-section'>
                 <div className="resume-switch">
-                    <button className="resume-button" onClick={() => setSelectedResume('PM')}>Product Development Resume</button>
-                    <button className="resume-button" onClick={() => setSelectedResume('TD')}>Delivery Analyst Resume</button>
+                    <button className={`resume-button ${selectedResume === 'TR' ? 'selected' : ''}`} onClick={() => setSelectedResume('TR')}>Trader Resume</button>
+                    <button className={`resume-button ${selectedResume === 'PM' ? 'selected' : ''}`} onClick={() => setSelectedResume('PM')}>Product Development Resume</button>
+                    <button className={`resume-button ${selectedResume === 'DA' ? 'selected' : ''}`} onClick={() => setSelectedResume('DA')}>Delivery Analyst Resume</button>
                 </div>
                 <ResumeViewer {...resumes[selectedResume]} />
             </div>
