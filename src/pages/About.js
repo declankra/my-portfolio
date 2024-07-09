@@ -51,9 +51,11 @@ function About() {
                     <h3>Some other things...</h3>
                     <p>career related</p>
                     <ul className='centered-list'>
-                        <li>conventional <a href="https://www.declankramper.me/resume">resumes</a></li>
+                        <li>conventional <a href="https://www.declankramper.me/resume">resumes</a> (but i'm hoping to tell that story differently)</li>
                         <li>'working with me' <a href="https://declankramper.notion.site/How-to-Work-With-Me-6174c60ed7f240e1b572343847006fe5?pvs=4">guide</a></li>
                     </ul>
+                    <p>misc</p>
+                    <li>playlists for <a href='https://open.spotify.com/playlist/02NLf38vf4rUB6VpUsEm49?si=c1d074e3223d42dd'>EOD grinds</a>, <a href="https://open.spotify.com/playlist/7lm0xMLRiFr4vEa6kVBrae?si=f6bcfe3985694066">flow state</a> energy, or great <a href = "https://open.spotify.com/playlist/64nUAC1xAKKr5rA1WGP6jE?si=1650f5af37cf4868">podcasts</a></li>
                 </div>
 
             </div>
