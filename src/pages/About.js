@@ -16,51 +16,66 @@ function About() {
                 <h1>About</h1>
             </section>
 
-            <div className = 'body'>
-            <div className='findMe' style={{ display: 'grid', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
-                <h3>You can find me...</h3>
-                <p >elsewhere on the intenet</p>
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px'}}>
-                    {/* LinkedIn Icon */}
-                    <a href="https://www.linkedin.com/in/declan-kramper" target="_blank" rel="noopener noreferrer" style={{ marginRight: '8px', marginLeft: '8px' }}>
-                        <LinkedInIcon sx={{ fontSize: 45, color: 'blue' }} />
-                    </a>
-                    {/* GitHub Icon */}
-                    <a href="https://github.com/declankra" target="_blank" rel="noopener noreferrer" style={{ marginRight: '8px', marginLeft: '8px' }}>
-                        <GitHubIcon sx={{ fontSize: 40, color: 'black' }} />
-                    </a>
-                    {/* Twitter Icon */}
-                    <a href="https://twitter.com/asbestostrades" target="_blank" rel="noopener noreferrer" style={{ marginRight: '8px', marginLeft: '8px' }}>
+            <div className='body'>
+                <div className='findMe centered-container'>
+                    <h3>You can find me...</h3>
+                    <p >elsewhere on the intenet</p>
+                    <div className='centered-icons'>
+                        {/* LinkedIn Icon */}
+                        <a href="https://www.linkedin.com/in/declan-kramper" target="_blank" rel="noopener noreferrer" style={{ margin: '0 8px' }}>
+                            <LinkedInIcon sx={{ fontSize: 45, color: 'blue' }} />
+                        </a>
+                        {/* GitHub Icon */}
+                        <a href="https://github.com/declankra" target="_blank" rel="noopener noreferrer" style={{ margin: '0 8px' }}>
+                            <GitHubIcon sx={{ fontSize: 40, color: 'black' }} />
+                        </a>
+                        {/* Twitter Icon */}
+                        <a href="https://twitter.com/asbestostrades" target="_blank" rel="noopener noreferrer" style={{ margin: '0 8px' }}>
                             <XIcon sx={{ fontSize: 40, color: 'blue' }} />
-                       </a>
-                    {/* Goodreads Icon */}
-                    <a href="https://www.goodreads.com/user/show/156508418-declan" target="_blank" rel="noopener noreferrer" style={{ marginRight: '8px', marginLeft: '8px' }}>
+                        </a>
+                        {/* Goodreads Icon */}
+                        <a href="https://www.goodreads.com/user/show/156508418-declan" target="_blank" rel="noopener noreferrer" style={{ margin: '0 8px' }}>
                             <AutoStoriesIcon sx={{ fontSize: 45, color: 'black' }} />
-                       </a>
+                        </a>
+                    </div>
+
+                    <p>or in person</p>
+                    <ul className='centered-list'>
+                        <li><a href="https://www.strava.com/athletes/98367252">running</a> on the lakeshore path</li>
+                        <li>trying a new <a href="https://www.icloud.com/notes/09eYa9zcbOnblaYQQ4n6YD7NQ#Coffee_shop_rankings">coffee shop</a></li>
+                        <li>riding a divvy bike</li>
+                    </ul>
                 </div>
 
-                <p>or in person</p>
-                <li><a href = "https://www.strava.com/athletes/98367252">running</a> on the lakeshore path</li>
-                <li>trying a new <a href = "https://www.icloud.com/notes/09eYa9zcbOnblaYQQ4n6YD7NQ#Coffee_shop_rankings">coffee shop</a></li>
-                <li>riding a divvy bike</li>                
-            </div>
+                <div className='otherThings centered-container'>
+                    <h3>Some other things...</h3>
+                    <p>career related</p>
+                    <ul className='centered-list'>
+                        <li>conventional <a href="https://www.declankramper.me/resume">resumes</a></li>
+                        <li>'working with me' <a href="https://declankramper.notion.site/How-to-Work-With-Me-6174c60ed7f240e1b572343847006fe5?pvs=4">guide</a></li>
+                    </ul>
+                </div>
 
-            <h3>Working with me?</h3>
-            <a href="https://www.declankramper.me/manual" style={{ marginRight: '10px' }}>
-                        <PictureAsPdfIcon sx={{ fontSize: 45, color: 'black' }} />
-                    </a>
-            <p>here's a guide to getting the most out of it.</p>
-            
-
-            <h3>If a conventional resume interests you...</h3>
-            {/* PDF Icon */}
-            <a href="https://www.declankramper.me/resume" style={{ marginRight: '10px' }}>
-                        <ContactPageIcon sx={{ fontSize: 45, color: 'black' }} />
-                    </a>
-            <p>here's mine. but im hoping to tell that story differently.</p>
             </div>
         </main>
     );
 }
 
 export default About;
+
+
+{/*
+                        <h3>Some other things to checkout</h3>
+                        <a href="" style={{ marginRight: '10px' }}>
+                                    <PictureAsPdfIcon sx={{ fontSize: 45, color: 'black' }} />
+                                </a>
+                        <p>'Working with me' guide</p>
+                        
+                    
+                        /* PDF Icon 
+                        <a href="" style={{ marginRight: '10px' }}>
+                                    <ContactPageIcon sx={{ fontSize: 45, color: 'black' }} />
+                                </a>
+                        <p>conventional resumes (but im hoping to tell my story differently)</p>
+
+                    */}

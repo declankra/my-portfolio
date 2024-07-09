@@ -1,5 +1,33 @@
-.main {
-  width: 100%;
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the container takes full width */
 }
 
+.centered-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
+.centered-list {
+  list-style-type: disc; /* Use disc bullets */
+  list-style-position: inside; /* Align bullets inside the list item box */
+  padding: 0;
+  margin: 0;
+}
+
+.centered-list li {
+  text-align: left; /* Align text to the left */
+  margin: 5px 0; /* Add vertical margin between items */
+  padding-left: 20px; /* Add padding to align text with bullets */
+}
+
+.centered-container p {
+  text-align: left; /* Align text to the left */
+  margin: 10px 0; /* Add vertical margin */
+}
