@@ -12,14 +12,9 @@ import Goals from './pages/Goals';
 import Resume from './pages/Resume';
 import Manual from './pages/Manual';
 
+import ReactGA from "react-ga4";
+ReactGA.initialize('G-YVX9YT52JE');
 
-
-import TagManager from 'react-gtm-module'
-// Add google tag manager for GUA 4
-const tagManagerArgs = {
-  gtmId: 'G-YVX9YT52JE'
-}
-TagManager.initialize(tagManagerArgs)
 
 function App() {
   return (
