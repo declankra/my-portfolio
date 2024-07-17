@@ -1,5 +1,7 @@
 import React from "react";
 import './BCG.css'
+import ReactGA from "react-ga4";
+ReactGA.initialize('G-YVX9YT52JE');
 
 
 const BCGResumePath = process.env.PUBLIC_URL + '/DeclanKramper_Resume_DeliveryAnalyst.pdf';

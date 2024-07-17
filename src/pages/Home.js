@@ -2,6 +2,8 @@ import React from "react";
 import './Home.css'
 import WhatAmIDoing from '../components/WhatAmIDoing';
 
+import ReactGA from "react-ga4";
+ReactGA.initialize('G-YVX9YT52JE');
 
 const Avatar = () => {
   const avatarPath = process.env.PUBLIC_URL + 'Avatar_ME_PS.webp'

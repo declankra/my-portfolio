@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './Resume.css'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ReactGA from "react-ga4";
+ReactGA.initialize('G-YVX9YT52JE');
 
 const ResumeViewer = ({ title, subtitle, path }) => (
     <div className="resume-container">

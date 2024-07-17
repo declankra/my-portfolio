@@ -3,9 +3,9 @@ import './About.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
-import ContactPageIcon from '@mui/icons-material/ContactPage';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import ReactGA from "react-ga4";
+ReactGA.initialize('G-YVX9YT52JE');
 
 function About() {
 

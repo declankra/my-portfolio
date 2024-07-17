@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@mui/material";
+import ReactGA from "react-ga4";
+ReactGA.initialize('G-YVX9YT52JE');
 
 // Define the URL of your Google Cloud Function
 const cloudFunctionUrl = "https://us-central1-my-portfolio-405919.cloudfunctions.net/getGoalSheetData";

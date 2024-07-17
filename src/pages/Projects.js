@@ -1,6 +1,8 @@
 import React from "react";
 import './Projects.css'
 import ProjectsGrid from "../components/ProjectsGrid";
+import ReactGA from "react-ga4";
+ReactGA.initialize('G-YVX9YT52JE');
 
 function Projects() {
     return (
