@@ -11,7 +11,6 @@ import BCG from './pages/BCG';
 import Goals from './pages/Goals';
 import Resume from './pages/Resume';
 import Manual from './pages/Manual';
-import React, { useEffect } from "react";
 import ReactGA from "react-ga4";
 ReactGA.initialize('G-YVX9YT52JE');
 

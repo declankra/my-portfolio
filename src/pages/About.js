@@ -66,7 +66,7 @@ function About() {
 export default About;
 
 
-{/*
+/*
                         <h3>Some other things to checkout</h3>
                         <a href="" style={{ marginRight: '10px' }}>
                                     <PictureAsPdfIcon sx={{ fontSize: 45, color: 'black' }} />
@@ -80,4 +80,4 @@ export default About;
                                 </a>
                         <p>conventional resumes (but im hoping to tell my story differently)</p>
 
-                    */}
+                    */
