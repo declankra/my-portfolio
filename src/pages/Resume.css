@@ -70,7 +70,36 @@
   }
   
   @media screen and (max-width: 767px) {
+    .resume-container {
+      padding: 0 10px; /* Add padding to the sides */
+      width: 100%;
+    }
+  
     .pdf-container {
-        height: 450px;
+      height: 450px;
+      width: 100%; /* Ensure it takes full width */
+      margin-bottom: 10px; /* Adjust spacing */
+    }
+  
+    .resume-header {
+      width: 100%; /* Make header full width */
+    }
+  
+    .resume-title, .resume-subtitle {
+      font-size: 1.2em; /* Adjust font size for readability */
+    }
+    .resume-subtitle {
+      font-size: 1.1em; /* Adjust font size for readability */
+    }
+  
+    .resume-switch {    
+      display: flex;
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 5px; /* Adjust spacing between buttons */
+    }
+  
+    .resume-button {
+      font-size: medium; /* Adjust button font size */
+      padding: 10px; /* Increase padding for touch targets */
     }
   }
