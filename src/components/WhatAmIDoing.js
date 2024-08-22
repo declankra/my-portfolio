@@ -77,7 +77,7 @@ const WhatAmIDoing = () => {
                             <Box display="flex" alignItems="center" gap="10px" my="10px">
                                 <Chip variant='outlined' label={project.status} color={getColor(project.status)} />
                                 <Typography sx={{ typography: 'extraText' }}>
-                                    ETA: {project.dueDate}
+                                    MVP Due Date: {project.dueDate}
                                 </Typography>
                             </Box>
                         </CardContent>
