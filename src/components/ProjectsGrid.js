@@ -25,8 +25,8 @@ const ProjectsGrid = () => {
         },
         {
             imageUrl: require(`../images/MeetOrNot.webp`),
-            title: 'Meet or Not | AI-powered Web Application for Your Shitty Meetings',
-            what: '[alpha version (no code)] web app to save you time and energy when creating your next meeting',
+            title: 'Meet or Not | AI-powered Tool For Productive Meetings',
+            what: '[full stack] web app to save you time and energy when creating your next meeting',
             how: 'determines if a meeting is needed (logical checks) and if so, creates an effective meeting agenda (OpenAI GPT-4 integration)',
             why: "to learn more about generative AI applications ",
             url: 'https://meetornot.io'
