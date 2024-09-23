@@ -4,6 +4,8 @@ import { Box, Card, Divider, CardContent, CardMedia, Typography, Chip, useTheme,
 
 const WhatAmIDoing = () => {
     const [projects, setProjects] = useState([]);
+    const [error, setError] = useState('');  // State for error message
+
     
     // Responsive design hooks
     const theme = useTheme();
@@ -29,14 +31,20 @@ const WhatAmIDoing = () => {
                 if (!response.ok) throw new Error('Network response was not ok');
 
                 const data = await response.json();
-                sessionStorage.setItem('projects', JSON.stringify(data)); // Cache data in session storage
-                sessionStorage.setItem('cacheTimestamp', new Date()); // Update timestamp
-                setProjects(data); // Update to use directly fetched data
+                
+                if (data.length === 0) {
+                    setError('Not directly building anything ~new~ right now, so I\'m either (a) improving past projects or (b) letting new ideas percolate'); // Set error message if no projects
+                } else {
+                    sessionStorage.setItem('projects', JSON.stringify(data)); // Cache data
+                    sessionStorage.setItem('cacheTimestamp', new Date()); // Update timestamp
+                    setProjects(data); // Set projects if data is available
+                    setError('');  // Clear any previous errors
+                }
             } catch (error) {
-                console.error('Fetch error:', error);
+                setError('Failed to load data. Not working on anything at the moment.');  // Set error message if fetch fails
             }
         };
-    
+
         fetchData();
     }, []);
 
@@ -55,7 +63,12 @@ const WhatAmIDoing = () => {
 
     return (
         <Box display="flex" flexDirection="column" gap="20px" marginTop={'10px'}>
-            {projects.map((project, index) => (
+            {error ? (
+                <Typography variant="body3" color="text.secondary" textAlign="center" >
+                    {error}
+                </Typography>
+            ) : (
+            projects.map((project, index) => (
                 <Card key={index} sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                     <Box flex={1} display="flex" flexDirection="column" justifyContent="space-between">
                         <CardContent>
@@ -91,7 +104,8 @@ const WhatAmIDoing = () => {
                         />
                     )}
                 </Card>
-            ))}
+            ))
+            )}
         </Box>
     );
 };
