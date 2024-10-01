@@ -1,6 +1,7 @@
 import React from "react";
 import './Home.css'
 import WhatAmIDoing from '../components/WhatAmIDoing';
+import UserCount from '../components/UserCount';
 
 import ReactGA from "react-ga4";
 ReactGA.initialize('G-YVX9YT52JE');
@@ -49,6 +50,10 @@ function Home() {
           <p>
             Welcome to my space on the internet. I enjoy learning about and (moreso lately) building products. This website is one of those products - it'll always be a WIP as I continually add newly completed <strong> <a href="/projects">projects</a>,</strong> thoughts on the <a href="https://declankramper.notion.site/Declan-s-Blog-35febfb6dfe04ac0a2a70538fd3b2402?pvs=4">blog</a>, and polishing touches. <br></br><br></br>Ultimately, I hope to positively impact the lives of others through my own products. <br></br><br></br> The date in the footer keeps me honest - check back soon for new developments!
           </p>
+        </div>
+        <div className="people-impacted">
+          <h2>People Impacted</h2>
+          <UserCount />
         </div>
         <div className="doing-now">
           <h2>What am I building now?</h2>
