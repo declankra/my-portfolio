@@ -3,7 +3,7 @@ import ReactGA from "react-ga4";
 ReactGA.initialize('G-YVX9YT52JE');
 
 
-const pdfManual = process.env.PUBLIC_URL + '/DeclanKramper_WorkingWithMe_Manual.pdf';
+// const pdfManual = process.env.PUBLIC_URL + '/DeclanKramper_WorkingWithMe_Manual.pdf';
 
 function Manual() {
     return (
