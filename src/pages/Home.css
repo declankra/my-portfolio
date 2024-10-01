@@ -66,6 +66,9 @@ main {
   width: 100%;
   margin-bottom: 8%;
 }
+.people-impacted h2 {
+  margin-bottom: -15px;
+}
 
 
 /* This ensures that the container of the WhatAmIDoing component is a flex container */
