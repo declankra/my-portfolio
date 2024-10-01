@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Card, Divider, CardContent, CardMedia, Typography, Chip, useTheme, useMediaQuery } from '@mui/material';
-
+import { Alert, AlertTitle } from '@mui/material';
+import BuildCircleOutlinedIcon from '@mui/icons-material/BuildCircleOutlined';
 
 const WhatAmIDoing = () => {
     const [projects, setProjects] = useState([]);
-    const [error, setError] = useState('');  // State for error message
-
+    const [error, setError] = useState(null);
     
     // Responsive design hooks
     const theme = useTheme();
@@ -33,15 +33,16 @@ const WhatAmIDoing = () => {
                 const data = await response.json();
                 
                 if (data.length === 0) {
-                    setError('Not directly building anything ~new~ right now, so I\'m either (a) improving past projects or (b) letting new ideas percolate'); // Set error message if no projects
+                    setError(true);
                 } else {
-                    sessionStorage.setItem('projects', JSON.stringify(data)); // Cache data
-                    sessionStorage.setItem('cacheTimestamp', new Date()); // Update timestamp
-                    setProjects(data); // Set projects if data is available
-                    setError('');  // Clear any previous errors
+                    sessionStorage.setItem('projects', JSON.stringify(data));
+                    sessionStorage.setItem('cacheTimestamp', new Date().toString());
+                    setProjects(data);
+                    setError(null);
                 }
             } catch (error) {
-                setError('Failed to load data. Not working on anything at the moment.');  // Set error message if fetch fails
+                console.error("Failed to load data:", error);
+                setError(true);
             }
         };
 
@@ -63,10 +64,25 @@ const WhatAmIDoing = () => {
 
     return (
         <Box display="flex" flexDirection="column" gap="20px" marginTop={'10px'}>
-            {error ? (
-                <Typography variant="body3" color="text.secondary" textAlign="center" >
-                    {error}
+        {error ? (
+            <Alert
+                severity="info"
+                icon={<BuildCircleOutlinedIcon fontSize="inherit" />}
+                sx={{
+                    width: '100%',
+                    maxWidth: isMobile ? '90%' : '600px',
+                    margin: '10px auto 0', // Added top margin
+                }}
+            >
+                <AlertTitle>
+                    <Typography variant="subtitle" component="div" sx={{ fontStyle: 'normal', fontWeight: 'bold' }}>
+                        Nothing net-new, yet
+                    </Typography>
+                </AlertTitle>
+                <Typography variant="body2" component="div" sx={{ fontStyle: 'normal'}}>
+                    so I'm either (a) improving past projects or (b) letting new ideas percolate
                 </Typography>
+            </Alert>
             ) : (
             projects.map((project, index) => (
                 <Card key={index} sx={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
