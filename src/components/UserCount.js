@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PieChart } from '@mui/x-charts/PieChart';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -19,10 +19,17 @@ const totalCount = data.reduce((sum, item) => sum + item.value, 0);
 const UserCount = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const [highlightedIndex, setHighlightedIndex] = useState(null);
 
   const chartSize = isMobile ? 325 : 400;
   const centerX = chartSize / 2;
   const centerY = chartSize / 2;
+
+  const handleArcClick = (event, itemIndex) => {
+    if (isMobile) {
+      setHighlightedIndex(itemIndex === highlightedIndex ? null : itemIndex);
+    }
+  };
 
   return (
     <Box sx={{ 
@@ -45,9 +52,10 @@ const UserCount = () => {
               paddingAngle: 2,
               cornerRadius: 10,
               arcLabel: (item) => `${item.label}: ${item.value}`,
-              arcLabelMinAngle: 360,
+              arcLabelMinAngle: isMobile ? 360 : 360,
               cx: centerX,
-              cy: centerY
+              cy: centerY,
+              highlighted: isMobile ? highlightedIndex : undefined,
             },
           ]}
           height={chartSize}
@@ -55,6 +63,7 @@ const UserCount = () => {
           slotProps={{
             legend: { hidden: true },
           }}
+          onClick={handleArcClick}
         >
           <text
             x={centerX}
@@ -71,7 +80,6 @@ const UserCount = () => {
           </text>
         </PieChart>
         
-        {/* Info Icon with Tooltip */}
         <Tooltip title="This chart shows the number of unique, first-time users across all my products.
 A user is anyone who has downloaded, installed, or visited and interacted with the product.
 The direction of impact, positive or negative, is not decipherable at scale, yet.
