@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import RocketLaunch from '@mui/icons-material/RocketLaunch';
 import ReactGA from "react-ga4";
 ReactGA.initialize('G-YVX9YT52JE');
 
@@ -37,6 +38,10 @@ function About() {
                         <a href="https://www.goodreads.com/user/show/156508418-declan" target="_blank" rel="noopener noreferrer" style={{ margin: '0 8px' }}>
                             <AutoStoriesIcon sx={{ fontSize: 45, color: 'black' }} />
                         </a>
+                        {/* ProductHunt Link */}
+                        <a href="https://www.producthunt.com/@declan_kramper" target="_blank" rel="noopener noreferrer" style={{ margin: '0 8px' }}>
+                            <RocketLaunch sx={{ fontSize: 45, color: 'Blue' }} />
+                        </a>
                     </div>
 
                     <p>or in person</p>
@@ -55,7 +60,12 @@ function About() {
                         <li>'working with me' <a href="https://declankramper.notion.site/How-to-Work-With-Me-6174c60ed7f240e1b572343847006fe5?pvs=4">guide</a></li>
                     </ul>
                     <p>misc</p>
-                    <li>playlists for <a href='https://open.spotify.com/playlist/02NLf38vf4rUB6VpUsEm49?si=c1d074e3223d42dd'>EOD grinds</a>, <a href="https://open.spotify.com/playlist/7lm0xMLRiFr4vEa6kVBrae?si=f6bcfe3985694066">flow state</a> energy, or great <a href = "https://open.spotify.com/playlist/64nUAC1xAKKr5rA1WGP6jE?si=1650f5af37cf4868">podcasts</a></li>
+                    <ul className='centered-list'>
+                        <li>playlists for <a href='https://open.spotify.com/playlist/02NLf38vf4rUB6VpUsEm49?si=c1d074e3223d42dd'>EOD grinds</a>, <a href="https://open.spotify.com/playlist/7lm0xMLRiFr4vEa6kVBrae?si=f6bcfe3985694066">flow state</a> energy, or great <a href="https://open.spotify.com/playlist/64nUAC1xAKKr5rA1WGP6jE?si=1650f5af37cf4868">podcasts</a></li>
+                        <li>tonight's <a href= 'https://www.instagram.com/dkfeasts'>dinner</a> inspiration</li>
+                        <li>i'd love to <a href="mailto:declankramper@gmail.com">hear</a> from you!</li>
+                    </ul>
+
                 </div>
 
             </div>
