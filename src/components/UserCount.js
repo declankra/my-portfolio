@@ -20,9 +20,9 @@ const colorPalette = {
 const data = [
   { id: 0, value: 4, label: 'Magic Record Player | IOT Controller', color: colorPalette[1] },
   { id: 1, value: 0, label: 'Soundcloud Downloader | OS Code', color: colorPalette[3] },
-  { id: 2, value: 156, label: 'Meet or Not | AI Web App', color: colorPalette[2] },
-  { id: 3, value: 679, label: 'Race Time Calculator | IOS App', color: colorPalette[0] },
-  { id: 4, value: 11, label: 'Grade Calculator | Web App', color: colorPalette[4] },
+  { id: 2, value: 165, label: 'Meet or Not | AI Web App', color: colorPalette[2] },
+  { id: 3, value: 737, label: 'Race Time Calculator | IOS App', color: colorPalette[0] },
+  { id: 4, value: 14, label: 'Grade Calculator | Web App', color: colorPalette[4] },
 ];
 
 const totalCount = data.reduce((sum, item) => sum + item.value, 0);
