@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="Footer">
       <p>see github repo for online portfolio updates: <a href="https://github.com/declankra/my-portfolio"><GitHubIcon /> declankra/my-portfolio</a></p>
-      <p>website was last updated: 11/17/24</p>
+      <p>website was last updated: 11/21/24</p>
     </div>
   );
 };
