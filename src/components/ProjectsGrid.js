@@ -8,6 +8,14 @@ const ProjectsGrid = () => {
     // Example data - this could come from a database or API in a real-world scenario
     const projects = [
         {
+            imageUrl: require(`../images/ValidateIdea.webp`),
+            title: 'ValidateIdea | Full-stack Web App',
+            what: 'quickly validate and launch your idea',
+            how: 'an open source, full stack, product-minded starter kit for going from idea-to-vetted live product',
+            why: "to answer the question 'what should i build?'",
+            url: 'https://www.validateidea.now'
+        },
+        {
             imageUrl: require(`../images/RaceTimePredictorAppIcon.webp`),
             title: 'Race Time Predictor | First IOS App',
             what: 'calculate your predicted running race times based off your Apple Watch data',
