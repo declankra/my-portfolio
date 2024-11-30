@@ -21,7 +21,7 @@ const data = [
   { id: 0, value: 4, label: 'Magic Record Player | IOT Controller', color: colorPalette[1] },
   { id: 1, value: 0, label: 'Soundcloud Downloader | OS Code', color: colorPalette[3] },
   { id: 2, value: 170, label: 'Meet or Not | AI Web App', color: colorPalette[2] },
-  { id: 3, value: 835, label: 'Race Time Calculator | IOS App', color: colorPalette[0] },
+  { id: 3, value: 887, label: 'Race Time Calculator | IOS App', color: colorPalette[0] },
   { id: 4, value: 16, label: 'Grade Calculator | Web App', color: colorPalette[4] },
 ];
 
