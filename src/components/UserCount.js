@@ -15,14 +15,16 @@ const colorPalette = {
   2: '#937666', // beaver brown
   3: '#CAA8F5', // mauve light purple
   4: '#5CC8FF', // Reserved for future use - deep sky blue
+  5: '#FF9F6B', // light orange
 };
 
 const data = [
   { id: 0, value: 4, label: 'Magic Record Player | IOT Controller', color: colorPalette[1] },
   { id: 1, value: 0, label: 'Soundcloud Downloader | OS Code', color: colorPalette[3] },
-  { id: 2, value: 170, label: 'Meet or Not | AI Web App', color: colorPalette[2] },
-  { id: 3, value: 887, label: 'Race Time Calculator | IOS App', color: colorPalette[0] },
+  { id: 2, value: 183, label: 'Meet or Not | AI Web App', color: colorPalette[2] },
+  { id: 3, value: 903, label: 'Race Time Calculator | IOS App', color: colorPalette[0] },
   { id: 4, value: 16, label: 'Grade Calculator | Web App', color: colorPalette[4] },
+  { id: 5, value: 4, label: 'ValidateIdea | Web App', color: colorPalette[5] },
 ];
 
 const totalCount = data.reduce((sum, item) => sum + item.value, 0);
