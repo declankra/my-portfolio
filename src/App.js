@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import NotificationBanner from './components/NotificationBanner';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
@@ -13,6 +14,7 @@ import Resume from './pages/Resume';
 import Manual from './pages/Manual';
 import ReactGA from "react-ga4";
 import TitleManager from './components/TitleManager';
+import RedirectDialog from './components/RedirectDialog';
 ReactGA.initialize('G-YVX9YT52JE');
 
 // If a route is not found in the routeTitles object, it will default to just 'Declan Kramper'.
@@ -20,6 +22,8 @@ ReactGA.initialize('G-YVX9YT52JE');
 function App() {
   return (
     <div className="App">
+      <RedirectDialog />
+      <NotificationBanner />
       <TitleManager> 
         <Navbar />
         <div className="ContentWrapper">
@@ -37,7 +41,6 @@ function App() {
         <Footer />
       </TitleManager>
     </div>
-
   );
 }
 
